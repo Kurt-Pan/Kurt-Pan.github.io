@@ -2,16 +2,16 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>XPTY</title>
-    <updated>2020-02-10T13:14:08.113Z</updated>
+    <updated>2020-02-11T02:50:53.084Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
-    <subtitle>共此灯烛光</subtitle>
+    <subtitle>Do one thing, do it well.</subtitle>
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, XPTY</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea, XP!]]></title>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://Kurt-Pan.github.io/post/hello-gridea</id>
         <link href="https://Kurt-Pan.github.io/post/hello-gridea">
         </link>
