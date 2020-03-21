@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-03-13T04:27:13.726Z</updated>
+    <updated>2020-03-21T05:21:10.183Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第31期]]></title>
+        <id>https://Kurt-Pan.github.io/post/031/</id>
+        <link href="https://Kurt-Pan.github.io/post/031/">
+        </link>
+        <updated>2020-03-21T04:12:00.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://cyber.biu.ac.il/event/the-10th-biu-winter-school-on-cryptography/">The 10th BIU Winter School on Cryptography : Information Theoretic Cryptography</a></li>
+<li><a href="https://missing.csail.mit.edu/">MIT: The Missing Semester of Your CS Education</a></li>
+<li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">Awesome zero knowledge proofs</a></li>
+<li><a href="https://sec-bit.github.io/blog/2019/11/07/zkp-learning-resources/">零知识证明学习资源汇总</a></li>
+<li><a href="https://crypto.stanford.edu/pbc/notes/">Ben Lynn's Notes</a></li>
+<li><a href="https://link.springer.com/referencework/10.1007/978-1-4419-5906-5">Encyclopedia of Cryptography and Security</a></li>
+<li>EuroCrypt 2020/ PKC 2020/ EuroSP2020
+<ul>
+<li>https://eurocrypt.iacr.org/2020/program.html</li>
+<li>https://pkc.iacr.org/2020/program.html</li>
+<li>https://www.ieee-security.org/TC/EuroSP2020/accepted.html</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实验一 Cracking Vigenère Cipher]]></title>
         <id>https://Kurt-Pan.github.io/post/cracking-vigenere-cipher/</id>
