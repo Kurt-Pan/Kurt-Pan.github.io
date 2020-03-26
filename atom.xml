@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-03-26T15:11:58.911Z</updated>
+    <updated>2020-03-26T15:16:57.662Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -92,9 +92,9 @@ and apply a final permutation <span class="katex"><span class="katex-mathml"><ma
 </code></pre>
 <h3 id="5-解密des密文">5. 解密DES密文</h3>
 <blockquote>
-<p>学号尾号为奇数的同学，解密<code>cipher_text_odd</code>；</p>
-<p>学号尾号为奇数的同学，解密<code>cipher_text_even</code>；</p>
-<p>key 都是 <code>FudanNiu</code></p>
+<p>学号尾号为奇数的同学，解密<code>cipher_text_odd</code>；<br>
+学号尾号为奇数的同学，解密<code>cipher_text_even</code>；<br>
+key 都是 <code>FudanNiu</code></p>
 </blockquote>
 <pre><code class="language-python">cipher_text_odd = 0x9b99d07d9980305e
 #cipher_text_even = 0x6f612748df99a70c
@@ -105,8 +105,8 @@ decrypt(cipher_text_odd,key)
 <h3 id="6-解密aes密文">6. 解密AES密文</h3>
 <p>用第5步DES解密的结果作为AES的密钥，来解密AES密文。</p>
 <blockquote>
-<p>学号尾号为奇数的同学，解密文件<code>odd.enc</code>；</p>
-<p>学号尾号为奇数的同学，解密文件<code>even.enc</code>；</p>
+<p>学号尾号为奇数的同学，解密文件<code>odd.enc</code>；<br>
+学号尾号为奇数的同学，解密文件<code>even.enc</code>；</p>
 </blockquote>
 <pre><code class="language-shell">openssl enc -d -aes256 -in odd.enc -out odd.plain
 openssl enc -d -aes256 -in even.enc -out even.plain
