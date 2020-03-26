@@ -1,24 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Kurt-Pan.github.io</id>
-    <title>Kurt Pan</title>
-    <updated>2020-03-26T15:11:58.911Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Kurt-Pan.github.io"/>
-    <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
-    <subtitle>Do one thing, do it well.</subtitle>
-    <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
-    <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Kurt Pan</rights>
-    <entry>
-        <title type="html"><![CDATA[实验二 DES&AES]]></title>
-        <id>https://Kurt-Pan.github.io/post/desaes/</id>
-        <link href="https://Kurt-Pan.github.io/post/desaes/">
-        </link>
-        <updated>2020-03-26T15:00:37.000Z</updated>
-        <summary type="html"><![CDATA[<p>2020 春《密码学基础》实验二</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>2020 春《密码学基础》实验二</p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>实验二 DES&amp;AES - Kurt Pan</title>
+<link rel="shortcut icon" href="https://Kurt-Pan.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://Kurt-Pan.github.io/media/css/tailwind.css">
+<link rel="stylesheet" href="https://Kurt-Pan.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="实验二 DES&amp;AES - Kurt Pan - Atom Feed" href="https://Kurt-Pan.github.io/atom.xml">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158246834-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-158246834-1');
+  </script>
+    
+
+  <meta name="description" content="2020 春《密码学基础》实验二
+
+实验目的
+
+Implementing DES algorithm
+Understanding the usage of AES algorithm
+
+实验内容
+How DES Works in Detai..." />
+  <meta property="og:title" content="实验二 DES&amp;AES - Kurt Pan">
+  <meta property="og:description" content="2020 春《密码学基础》实验二
+
+实验目的
+
+Implementing DES algorithm
+Understanding the usage of AES algorithm
+
+实验内容
+How DES Works in Detai..." />
+  <meta property="og:type" content="articles">
+  <meta property="og:url" content="https://Kurt-Pan.github.io/post/desaes/" />
+  <meta property="og:image" content="https://Kurt-Pan.github.io/images/avatar.png">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  <meta name="twitter:title" content="实验二 DES&amp;AES - Kurt Pan">
+  <meta name="twitter:description" content="2020 春《密码学基础》实验二
+
+实验目的
+
+Implementing DES algorithm
+Understanding the usage of AES algorithm
+
+实验内容
+How DES Works in Detai...">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://Kurt-Pan.github.io/post/desaes/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+ 
+  
+    <link rel="stylesheet" href="https://Kurt-Pan.github.io/media/css/prism-atom-dark.css">
+  
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+  
+</head>
+
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+    <a href="https://Kurt-Pan.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+      Kurt Pan
+    </a>
+    <div class="max-w-4xl w-full mx-auto">
+      <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
+        <h1 class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700">
+          实验二 DES&amp;AES
+        </h1>
+        
+        <div class="mb-8 flex flex-wrap">
+          <div class="text-gray-400 text-sm mr-4">2020-03-26 · 18 min read</div>
+          
+            <a href="https://Kurt-Pan.github.io/tag/uXNqqfXY0/" class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2">
+              <i class="ri-hashtag"></i>
+              Cryptography
+            </a>
+          
+        </div>
+        <div class="markdown mb-8" v-pre>
+          <p>2020 春《密码学基础》实验二</p>
 <!-- more -->
 <h2 id="实验目的">实验目的</h2>
 <ul>
@@ -392,569 +467,257 @@ cipher_text_odd = 0x9b99d07d9980305e
 decrypt(cipher_text_odd,key)
 #decrypt(cipher_text_even,key)
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[每周分享第31期]]></title>
-        <id>https://Kurt-Pan.github.io/post/031/</id>
-        <link href="https://Kurt-Pan.github.io/post/031/">
-        </link>
-        <updated>2020-03-21T04:12:00.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li><a href="https://cyber.biu.ac.il/event/the-10th-biu-winter-school-on-cryptography/">The 10th BIU Winter School on Cryptography : Information Theoretic Cryptography</a></li>
-<li><a href="https://missing.csail.mit.edu/">MIT: The Missing Semester of Your CS Education</a></li>
-<li><a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">Awesome zero knowledge proofs</a></li>
-<li><a href="https://sec-bit.github.io/blog/2019/11/07/zkp-learning-resources/">零知识证明学习资源汇总</a></li>
-<li><a href="https://crypto.stanford.edu/pbc/notes/">Ben Lynn's Notes</a></li>
-<li><a href="https://link.springer.com/referencework/10.1007/978-1-4419-5906-5">Encyclopedia of Cryptography and Security</a></li>
-<li>EuroCrypt 2020/ PKC 2020/ EuroSP2020
-<ul>
-<li>https://eurocrypt.iacr.org/2020/program.html</li>
-<li>https://pkc.iacr.org/2020/program.html</li>
-<li>https://www.ieee-security.org/TC/EuroSP2020/accepted.html</li>
-</ul>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[实验一 Cracking Vigenère Cipher]]></title>
-        <id>https://Kurt-Pan.github.io/post/cracking-vigenere-cipher/</id>
-        <link href="https://Kurt-Pan.github.io/post/cracking-vigenere-cipher/">
-        </link>
-        <updated>2020-03-08T08:35:04.000Z</updated>
-        <summary type="html"><![CDATA[<p>2020 春《密码学基础》实验一</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>2020 春《密码学基础》实验一</p>
-<!-- more -->
-<hr>
-<h2 id="实验目的">实验目的</h2>
-<ol>
-<li>Understanding Vigenère Cipher</li>
-<li>Understanding Kasiski Test</li>
-<li>Understanding Friedman's Index of Coincidence Test</li>
-<li>Understanding Frequency Analysis to crack Caesar Cipher.</li>
-</ol>
-<h2 id="实验内容">实验内容</h2>
-<blockquote>
-<p>Note: the alphabet through the entire experiment is the uppercase English <code>A-Z</code>, no space, no punctuations.</p>
-</blockquote>
-<p>In this experiment, we will examine a well-known classical cipher, Vigenère Cipher.  Dating back to 16th century , Vigenère Cipher is a polyalphabetic substitution cipher.</p>
-<p>We will use some techniques and write computer program to cryptanalyze (to Crack!) the Vigenère Cipher.</p>
-<p>An overview of the process is as follows. Inputting ciphertext encrypted by Vigenère Cipher and using Kasiski examination + Friedman test to determine the keyword length. Then using the ciphertext separated by the length of the keyword as a group, and crack it by analyzing the Caesar cipher. Finally, outputting the keyword and the corresponding plaintext.</p>
-<h3 id="vigenère-cipher">Vigenère Cipher</h3>
-<p>Suppose we have an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>-character alphabet <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">A = (a_1 , a_2 , ..., a_n )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>-character<br>
-key, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>K</mi><mo>=</mo><mo>(</mo><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>k</mi><mi>m</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">K = (k_1 , k_2 , ..., k_m )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> and a <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>-character plaintext, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mo>=</mo><mo>(</mo><msub><mi>m</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>m</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>m</mi><mi>t</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">M = (m_1 , m_2 , ..., m_t )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>.</p>
-<p>The alphabet  are encoded by integer number, i.g. the letters <code>A</code>–<code>Z</code> are taken to be the numbers <code>0</code>–<code>25</code> .</p>
-<p>Then, we define a <strong>Vigenère Cipher</strong> :</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>K</mi></msub><mo>(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>)</mo><mo>=</mo><msub><mi>m</mi><mi>i</mi></msub><mo>+</mo><msub><mi>k</mi><mi>i</mi></msub><mspace></mspace><mspace width="1em"/><mo>(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mspace width="0.3333333333333333em"/><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">E_K (a_i ) = m_i + k_i \pmod n
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></p>
-<p>and</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>D</mi><mi>K</mi></msub><mo>(</mo><msub><mi>c</mi><mi>i</mi></msub><mo>)</mo><mo>=</mo><msub><mi>c</mi><mi>i</mi></msub><mi mathvariant="normal">−</mi><msub><mi>k</mi><mi>i</mi></msub><mspace></mspace><mspace width="1em"/><mo>(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mspace width="0.3333333333333333em"/><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">D_K (c_i ) = c_i − k_i \pmod n
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">−</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></p>
-<figure data-type="image" tabindex="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/600px-Vigen%C3%A8re_square_shading.svg.png" alt="File:Vigenère square shading.svg" loading="lazy"></figure>
-<p>Above is the polyalphabetic substitution table of Vigenère Cipher,  called the Vigenère square or Vigenère table, also known as the tabula recta.</p>
-<p>With a random key equal to the size of the plaintext, Vigenère Cipher becomes<br>
-a <em>one-time pad</em> which is the only proven unbreakable cipher in the history. If the keyword has only one character, the Vigenère Cipher degenerates into a <em>Caesar Cipher</em>.</p>
-<p>The primary weakness of the Vigenère cipher is the repeating nature of its key. If a cryptanalyst correctly guesses the key's length, the cipher text can be treated as interwoven Caesar ciphers, which can easily be broken individually. The Kasiski examination and Friedman test can help to determine the key length.</p>
-<h3 id="kasiski-test">Kasiski Test</h3>
-<p><strong>Kasiski test</strong> is based on the observation that if two identical fragments of length three or more (trigraphs in this experiment) appears in the ciphertext, it is likely  that they correspond to the same plaintext fragment. The distance between the occurrences has to be a multiple of the period.</p>
-<p>Then we can find the common factors of the value of distance from previous occurrence, and use them as the key length candidates.</p>
-<blockquote>
-<p>Key:              ABCDABCDABCDABCDABCDABCDABCD<br>
-Plaintext:    <strong>CRYPTO</strong>ISSHORTFOR<strong>CRYPTO</strong>GRAPHY<br>
-Ciphertext: <strong>CSASTP</strong>KVSIQUTGQU<strong>CSASTP</strong>IUAQJB</p>
-</blockquote>
-<h3 id="index-of-coincidenceic-重合指数-friedman-test">Index of Coincidence(IC, 重合指数) &amp; Friedman Test</h3>
-<p>Let <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mo>{</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>…</mo><msub><mi>x</mi><mi>n</mi></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">x = \{x_1 x_2 \ldots  x_n \}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> be a string of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> alphabetic characters. The <strong>index of coincidence</strong> of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>I</mi><mi>C</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">IC(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>, is the probability that randomly chosen two elements<br>
-of string <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> are the same.</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="bold">I</mi><mi mathvariant="bold">C</mi></mrow><mo>=</mo><mfrac><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>c</mi></munderover><msub><mi>n</mi><mi>i</mi></msub><mo>(</mo><msub><mi>n</mi><mi>i</mi></msub><mo>−</mo><mn>1</mn><mo>)</mo></mstyle><mrow><mi>N</mi><mo>(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{IC} = \frac{\displaystyle\sum_{i=1}^{c}n_i(n_i -1)}{N(N-1)}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">I</span><span class="mord mathbf">C</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:4.255066em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.3190660000000003em;"><span style="top:-2.9653970000000003em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.881397em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-5.319066000000001em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> is the length of the text and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the frequency (as integer) of the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> letters of the alphabet (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mo>=</mo><mn>26</mn></mrow><annotation encoding="application/x-tex">c = 26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">6</span></span></span></span> for monocase English). The sum of the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is necessarily <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>.</p>
-<p>Coincidences in ciphertext can be caused by coincidences in the underlying plaintext, this technique is used to cryptanalyze the Vigenère cipher.</p>
-<p>The Friedman test (sometimes known as the kappa test) was invented during the 1920s by William F. Friedman, who used the index of coincidence, which measures the unevenness of the cipher letter frequencies to break the cipher.</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mo>≈</mo><mfrac><mrow><msub><mi>κ</mi><mi>p</mi></msub><mo>−</mo><msub><mi>κ</mi><mi>r</mi></msub></mrow><mrow><mi>I</mi><mi>C</mi><mo>−</mo><msub><mi>κ</mi><mi>r</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0.027</mn><mi>N</mi></mrow><mrow><mi>I</mi><mi>C</mi><mo>∗</mo><mo>(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mn>0.0385</mn><mi>N</mi><mo>+</mo><mn>0.0655</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">L \approx \frac{\kappa_p-\kappa_r}{IC-\kappa_r}= \frac{0.027N}{IC*(N-1)-0.0385N+0.0655}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.09633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.26033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.29633em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">3</span><span class="mord">8</span><span class="mord">5</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">6</span><span class="mord">5</span><span class="mord">5</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">2</span><span class="mord">7</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span></span></span></span> is the key length.</p>
-<p>The probability <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>κ</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\kappa _{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>  is for  any two randomly chosen source language letters are the same (around 0.0655 for monocase English)</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>κ</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">\kappa_r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the probability of a coincidence  for a uniform random selection from the alphabet  (1/26 = 0.0385 for English).</p>
-<p>This formula applies only to the ciphertext of English plaintext. For other languages, the constants may be different.</p>
-<h2 id="实验步骤与过程">实验步骤与过程</h2>
-<h3 id="1-computing-the-chance-for-the-false-positive-rate-of-kasiski-test">1. Computing the chance for the false positive rate of Kasiski test</h3>
-<blockquote>
-<p>Read the paper <strong>Kasiski’s Test: Couldn’t the Repetitions be by Accident?</strong> and answer the question below:</p>
-<p>(The purpose of solving this probability is to recognize the validity of the Kasiski test.)</p>
-</blockquote>
-<p>The likelihood of two same trigraphs (three-letter sequences) <strong>not</strong> being from the same plaintext fragment? n=26</p>
-<hr>
-<p>Then implementing the functions below in the program <code>crack_vigenere_scaffold.py</code> to finish the experiment:</p>
-<h3 id="2-implementing-vigenère-cipher">2. Implementing Vigenère Cipher</h3>
-<pre><code class="language-python">def vigenere_encrypt(plaintext, key, alphabet):
-    &quot;&quot;&quot;Returns ciphertext encrypted by vigenere cipher using key&quot;&quot;&quot;
-    
-def vigenere_decrypt(ciphertext, key, alphabet):
-    &quot;&quot;&quot;Returns plaintext decrypted by vigenere cipher using key&quot;&quot;&quot;
 
-</code></pre>
-<h3 id="3-determining-the-key-size">3. Determining the Key Size</h3>
-<pre><code class="language-python">def kasiski_test(ciphertext):
-    &quot;&quot;&quot;Finds gcd of most common distances between repeated trigraphs
-    Recommended strategy: loop through the ciphertext, keeping a list of trigraphs and a list of distances in this way:
-    1) When encountering a new trigraph add it to the trigraph list
-    2) When encountering a repeat add the distance from current index to first index of that trigraph to the list of distances&quot;&quot;&quot;
+        </div>
+        <!-- Share to Twitter, Weibo, Telegram -->
+        <div class="flex items-center">
+          <div class="mr-4 flex items-center">
+            <i class="ri-share-forward-line text-gray-500"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTwitter">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex" @click="shareToWeibo">
+            <i class="ri-weibo-line"></i>
+          </div>
+          <div class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex" @click="shareToTelegram">
+            <i class="ri-telegram-line"></i>
+          </div>
+        </div>
+      </div>
 
-</code></pre>
-<pre><code class="language-python">def index_of_coincidence(ciphertext, alpha):
-    &quot;&quot;&quot;Caculates index of coincidnece of ciphertext&quot;&quot;&quot;
-</code></pre>
-<h3 id="4-determining-the-keyword">4. Determining the Keyword</h3>
-<p>Once the length of the key is known, the ciphertext can be rewritten into that many columns, with each column corresponding to a single letter of the key. Each column consists of plaintext that has been encrypted by a single Caesar cipher. The Caesar key (shift) is just the letter of the Vigenère key that was used for that column. Using methods similar to those used to break the Caesar cipher, the letters in the ciphertext can be discovered.</p>
-<pre><code class="language-python">def find_likely_letters(coset, alpha, eng_freq):
-    &quot;&quot;&quot;Finds the most likely shifts for each coset and prints them
-    Recommended strategy: make a list of the frequencies of each letter in the coset, in order, A to Z.
-    Then, alternate using the find total difference method (on your frequencies list and the standard english frequencies list) and the rotate list method to fill out a new list of differences.  This makes a list of the total difference for each possible encryption letter, A to Z, in order.
-    Then, find the indices of the smallest values in the new list, and i2c them for the most likely letters.&quot;&quot;&quot;
-    
-</code></pre>
-<p>Hint: The shift which leads to total difference closest to the English frequency distribution is the most likely Caesar cipher key.</p>
-<h2 id="实验要求和评分">实验要求和评分</h2>
-<ul>
-<li>学号尾号是奇数的同学分析文本<code>odd</code>，学号尾号是偶数的同学分析文本<code>even</code></li>
-</ul>
-<pre><code class="language-python">odd = &quot;DWFOSZPFWGVVMVOBXTBMGIILECURUWKGZGNMUHUHMKDTNUWDRMGHPTQABVVKOTVOAMKHCGJWGUGMEWQGIOAGSCLVSLGIQKFDIEUQXUHWCSWVGGARMMVVFWAJKICMUROBLYVQYFBAGGGFUMFYCZXTEXNZMAPCZJTWENWLVHZNOATEHQBOABVGBVMTLWTNRSAYTCUGIMBPVMEFVMYSIXOMLUSABGBAGHZHTBUCGMQNWWGZKBNXEGHMYZVHPFMIFZLKPTRUZTPGIPUQHPGIEFVHVFMNMTRRCAFJJEGGQADMYKBIADQTNWVFUQMWHQBOAVCBVBUIOQWLZFLBCHQAHLBUDCGFAMJSKBTBHHAMQJIMKCVVOKKGOARTBKCBANDBBQBKBTBLNWUVUQGIHPRNQGKACZQZTEHQPBTMTOVFBKMKCVFJHXCBLPVBMKBOBGNMJSXBTABDWTVUGYQFAZBTEEOAHBTMTOVFBKMKCVFBVWVVMEFQLCPZBBLXTQWFUQGVVMYPALQTIOJTBVMBBNIDGBWASMOGFAVCTXROGZFVMUTWEOWGTSDRSABDZMFFZOKQMFXQMJHPRQWLUWJVMQMACNEFDXTGIYUPXPSMQGWKVFCFUAITSIQTUXTQPNOBLOIAGCMPCFGBGBAGWZPVAMQAMETPTUGTVOOMJSUSPZFQFMVONHTAIGJWGVVIAUPXAKWHMLHVVMEXQLGBMREIVGFBNJVIGFKROBTISWSGZTWRQFBKVGDBREILWBIIPQWCPTRUPXUSKBTBLCBLCBGFGBBHOKXTHIVOBBGGKNOJXCJWVEMWKBXRSAHPPGHTQGIDPLTQVCZKHSZXPQGOVBGQAMPIIGKGURYQLVGBBNIDGDILNMGVGWIFZTECUZVVBEOBVPVLEVIAOMEYWBUPCMCHZHTBXFDIEUG&quot;
-
-even = &quot;ZMJXCGLHBGIPSPMPSOUQEOQYIFRYWCYVBWBVQKICRMWUEDXYCVAMRRYMCSRFMBGRNTLGTXRVJQKENAIFQZIIIJTATEHMUMVYZCZWPVHGLQUAOQDMVTBWBQAFJOXKVNQQTENVWACXBZRITVROUWLKJMBVRFWJXQYPWTKOIEFXKFLSBFKTTXVVFLVZKVMGQREEXQPPSEHBYIAVIBOHCJIFBVGHFPTSOFMFPLICERITWPDBZSPLIGEHUFXGVIGUGQJTGGASEVIEHEHUDHWMIXGKUWADTJMPMCFAVCTLCIXZVFIKMQGAQEHIKICGMSQIWIRGPBMCHAFJEKGDGROIERAQQFBAKIOLEVVFPDMPBUWMHBYIPXKSFVQKCQYASPXZVOGRLWFWZZFWMQCAFPRRPXTGNQLJYRITMGKMVUWBDOYHVKSHTEFVWBVRUBOBNWCIICMBVRVIDIVBUSGKMFVGMQQNOLVZGEWDZHVKWKGQBSRZDEVBWBGKMFVATVRPRUGYVXZGPLMEGGLPCJSZFQKLMCSSZFZKWQBTSZFZCUTMFHKLVGVZMCWWJCUMMAFFPRRIBVUGKQJEPVQSAWIIXKGBCNVKZIPVMHUHLVZGEWDZHVKSHVWACXBVVEHVHERTCIFVWAZXVZGCMQCAQMKAQKSGCUWEWGLMTSRZKPGLAOAGQEIZIMBFLDVGQGBOPWJVXYXMBCHWGPGHZQBPXLXGKACARXGSUBBSFLLVWQYBVRZWIPFKMDYDKZRIFWGGPIZPCGLANQGVBENZGVRVJAKMPHROMTSOFCBVFIKMQGATBUURRATXDYLKRXKHVGGKMJIEHVHNFBJQWLBPRPIUIUXKIEHIXEKGAHORBYICOMGQUWGTKGOOAGBYIKGRSPWQFRQYQZYHOZXKFIHRPMJWCZMGNWXIIUXVHU&quot;
-</code></pre>
-<blockquote>
-<p>Hint: 明文分别是两篇著名的密码学论文的第一段哦～</p>
-</blockquote>
-<ul>
-<li>由于密文文本长度限制，Fieldman Test 可能不准，以Kasiski Test 为主。</li>
-<li>编程语言、编译运行等实验环境<em>原则上不限</em>，<strong>建议</strong>在给出的Python框架基础上补完。
-<ul>
-<li>如使用其他编程语言、编译运行等实验环境，需要完成同等任务，并在实验报告中写明。</li>
-</ul>
-</li>
-<li>评分内容如下：（100分是本实验的总分，本学期五个实验各100分，学期末会加权得出实验分总分并汇入总成绩）</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>内容</th>
-<th>总分100</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Probability Computation</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Implementing Vigenère Cipher</td>
-<td>20</td>
-</tr>
-<tr>
-<td>Determining the Key Size(Kasiski Test + Friedman Test)</td>
-<td>20+10</td>
-</tr>
-<tr>
-<td>Determining the Keyword</td>
-<td>30</td>
-</tr>
-<tr>
-<td>Document(实验报告)</td>
-<td>15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="实验提交">实验提交</h2>
-<ul>
-<li>分组规则:不分组,即独立完成project</li>
-<li>完成提交截止时间: <strong>3月29日23:00前</strong></li>
-<li>提交内容清单:需要提交
-<ul>
-<li>实验报告 （按照<strong>实验报告模板</strong>书写，要求提交<code>pdf</code>格式文件）（命名格式：<code>姓名+学号+实验一.pdf</code>）</li>
-<li>项目源代码 (命名格式：<code>学号_crack_vigenere.py</code>)</li>
-</ul>
-</li>
-<li>提交方式:<br>
-所有提交清单中的文件,压缩后, elearning提交</li>
-<li>鼓励录制短视频，介绍代码结构、演示运行结果、分析计算量等。</li>
-</ul>
-<hr>
-<h2 id="参考资料">参考资料</h2>
-<ul>
-<li>Wikipedia
-<ul>
-<li><a href="%5Bhttps://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher%5D(https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)">Vigenère cipher</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Kasiski_examination">Kasiski examination</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Index_of_coincidence">Index of coincidence</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="crack_vigenere_scaffoldpy">crack_vigenere_scaffold.py</h2>
-<pre><code class="language-python">from math import gcd
-from collections import Counter
-
-# Some helper functions provided:
-def c2i(c, alphabet):
-    &quot;&quot;&quot;Returns the index of c in the string alphabet, starting at 0&quot;&quot;&quot;
-    return alphabet.index(c)
-
-def i2c(i, alphabet):
-    &quot;&quot;&quot;Returns the character at index i in alphabet&quot;&quot;&quot;
-    return alphabet[i]
-
-def prepare_string(s, alphabet):
-    &quot;&quot;&quot;removes characters from s not in alphabet, returns new string&quot;&quot;&quot;
-    s = s.upper()
-    finalString = &quot;&quot;
-    for i in s:
-      if i in alphabet:
-        finalString += i
-    return finalString
-
-def make_cosets(text, n):
-    &quot;&quot;&quot;Makes cosets out of a ciphertext given a key length; should return an array of strings&quot;&quot;&quot;
-
-    cosets = []
-  
-    for index in range(n):
-      i = 0
-      nextword = &quot;&quot;
-      while (i + index) &lt;= (len(text) - 1):
-        nextword += text[i + index]
-        i += n
       
-      cosets.append(nextword)
-    
-    return cosets
 
-def rotate_list(old_list):  
-    &quot;&quot;&quot;Takes the given list, removes the first element, and appends it to the end of the list, then returns the
-    new list&quot;&quot;&quot;
-    new_list = old_list[:]
-    new_list.append(old_list[0])
-    del new_list[0]
-    return new_list
+      
+        <div id="vlaine-comment"></div>
+<script type="application/javascript" src="https://unpkg.com/valine"></script>
+<script type="application/javascript">
+  new Valine({
+    el: '#vlaine-comment',
+    appId: 'q39sP3f3dW0cfgG1vmUeDpDa-gzGzoHsz',
+    appKey: 'sjBco33AzulpsEqQ6wK6uJcj',
+    pageSize: 10,
+    notify: false,
+    avatar: 'mp',
+    verify: true,
+    placeholder: '',
+    visitor: true,
+    highlight: true,
+    recordIP: true,
+  })
+</script>
+      
 
-def find_total_difference(list1, list2):
-    &quot;&quot;&quot;Takes two lists of equal length containing numbers, finds the difference between each pair of matching
-    numbers, sums those differences, and returns that sum&quot;&quot;&quot;
-    
-    finalSum = 0
-    i = 0
-    while i &lt; len(list1):
-      finalSum += abs(list2[i] - list1[i])
-      i += 1
-    
-    return finalSum  
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  
+</footer>
+    </div>
 
+    <!-- TOC Container -->
+    <div class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight" @click="showToc = true">
+      <i class="ri-file-list-line"></i>
+    </div>
 
-
-
-def vigenere_encrypt(plaintext, key, alphabet):
-    &quot;&quot;&quot;Returns ciphertext encrypted by vigenere cipher using key&quot;&quot;&quot;
-    # WRITE YOUR CODE HERE!
-
-
-
-
-
-def vigenere_decrypt(ciphertext, key, alphabet):
-    &quot;&quot;&quot;Returns plaintext decrypted by vigenere cipher using key&quot;&quot;&quot;
-    # WRITE YOUR CODE HERE!
-
-
-
-
-
-def kasiski_test(ciphertext):  #Code partially provided
-    &quot;&quot;&quot;Finds gcd of most common distances between repeated trigraphs
-    Recommended strategy: loop through the ciphertext, keeping a list of trigraphs and a list of distances in this way:
-    1) When encountering a new trigraph add it to the trigraph list
-    2) When encountering a repeat add the distance from current index to first index of that trigraph to the list of distances&quot;&quot;&quot;
-
-    trigraphs = []
-    distances = []
-    
-    # WRITE YOUR CODE HERE!
-
-        
-    # Code is provided to find the gcd of any common distances appearing at least twice
-    dCount = Counter(distances)
-    topCount = dCount.most_common(6)
-    my_gcd = topCount[0][0]
-    for index in range(1, len(topCount)):
-        if topCount[index][1] &gt; 1:
-            my_gcd = gcd(my_gcd, topCount[index][0])
-    return my_gcd 
-
-
-
-def index_of_coincidence(ciphertext, alpha):
-    &quot;&quot;&quot;Caculates index of coincidnece of ciphertext&quot;&quot;&quot;
-    common = Counter(ciphertext)
-    ioc = 0
-    # WRITE YOUR CODE HERE!
-
-
-    return ioc
-
-def friedman_test(ciphertext, alpha):
-    l = 0
-    
-    n = len(ciphertext)
-    i = index_of_coincidence(ciphertext, alpha)
-    l = n * (0.027)/((n-1)*i + 0.0655 - 0.0385 * n)
-    
-    return l
-
-
-
-def run_key_tests(ciphertext, alphabet): 
-    &quot;&quot;&quot;Runs Kasiski and Friedman tests and outputs results&quot;&quot;&quot;
-    kasiski = kasiski_test(ciphertext)
-    friedman = friedman_test(ciphertext, alphabet)
-    
-    out =  &quot;Kasiski test gives this as the most likely: &quot; + str(kasiski) +  &quot;\n Friedman test gives: &quot; + str(friedman)
-    return out
-
-    
-def find_likely_letters(coset, alpha, eng_freq):
-    &quot;&quot;&quot;Finds the most likely shifts for each coset and prints them
-    Recommended strategy: make a list of the frequencies of each letter in the coset, in order, A to Z.
-    Then, alternate using the find total difference method (on your frequencies list and the standard english
-    frequencies list) and the rotate list method to fill out a new list of differences.  This makes a list of
-    the total difference for each possible encryption letter, A to Z, in order.
-    Then, find the indices of the smallest values in the new list, and i2c them for the most likely letters.&quot;&quot;&quot;
-    
-    coset_freq = []
-    differences = []
-    # WRITE YOUR CODE HERE!
-
-    
-    firstletter = 0
-    secondletter = 1
-    # WRITE YOUR CODE HERE!
-    
-    
-    letter1 = alpha[firstletter]
-    letter2 = alpha[secondletter]
-    return &quot;the most likely letter is: &quot; + letter1 + &quot; followed by: &quot; + letter2
-
-
-def crack(ciphertext, alpha, eng_freq): 
-    &quot;&quot;&quot;Main crack function&quot;&quot;&quot;
-    print(&quot;Your cipher text is: &quot; + ciphertext)
-    out = run_key_tests(ciphertext, alpha)
-    print(out)
-    x = int(input(&quot;Choose the key length you'd like to try: &quot;))
-    cosets = make_cosets(ciphertext, x)
-    for index in range(len(cosets)):
-        print(&quot;For coset &quot; + str(index + 1) + &quot;, &quot; + find_likely_letters(cosets[index], alpha, eng_freq) + &quot;.&quot;)
-    s = input(&quot;Type the key you would like to use to decipher: &quot;)
-    print(vigenere_decrypt(ciphertext, s, alpha))
-    print()
-
-
-
-
-alpha = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;
-
-eng_freq = [.0817, .0149, .0278, .0425, .1270, .0223, .0202, .0609, .0697, .0015, .0077, .0403, .0241, .0675, .0751,
-            .0193, .0010, .0599, .0633, .0906, .0276, .0098, .0236, .0015, .0197, .0007]
-
-
-odd = &quot;DWFOSZPFWGVVMVOBXTBMGIILECURUWKGZGNMUHUHMKDTNUWDRMGHPTQABVVKOTVOAMKHCGJWGUGMEWQGIOAGSCLVSLGIQKFDIEUQXUHWCSWVGGARMMVVFWAJKICMUROBLYVQYFBAGGGFUMFYCZXTEXNZMAPCZJTWENWLVHZNOATEHQBOABVGBVMTLWTNRSAYTCUGIMBPVMEFVMYSIXOMLUSABGBAGHZHTBUCGMQNWWGZKBNXEGHMYZVHPFMIFZLKPTRUZTPGIPUQHPGIEFVHVFMNMTRRCAFJJEGGQADMYKBIADQTNWVFUQMWHQBOAVCBVBUIOQWLZFLBCHQAHLBUDCGFAMJSKBTBHHAMQJIMKCVVOKKGOARTBKCBANDBBQBKBTBLNWUVUQGIHPRNQGKACZQZTEHQPBTMTOVFBKMKCVFJHXCBLPVBMKBOBGNMJSXBTABDWTVUGYQFAZBTEEOAHBTMTOVFBKMKCVFBVWVVMEFQLCPZBBLXTQWFUQGVVMYPALQTIOJTBVMBBNIDGBWASMOGFAVCTXROGZFVMUTWEOWGTSDRSABDZMFFZOKQMFXQMJHPRQWLUWJVMQMACNEFDXTGIYUPXPSMQGWKVFCFUAITSIQTUXTQPNOBLOIAGCMPCFGBGBAGWZPVAMQAMETPTUGTVOOMJSUSPZFQFMVONHTAIGJWGVVIAUPXAKWHMLHVVMEXQLGBMREIVGFBNJVIGFKROBTISWSGZTWRQFBKVGDBREILWBIIPQWCPTRUPXUSKBTBLCBLCBGFGBBHOKXTHIVOBBGGKNOJXCJWVEMWKBXRSAHPPGHTQGIDPLTQVCZKHSZXPQGOVBGQAMPIIGKGURYQLVGBBNIDGDILNMGVGWIFZTECUZVVBEOBVPVLEVIAOMEYWBUPCMCHZHTBXFDIEUG&quot;
-#even = &quot;ZMJXCGLHBGIPSPMPSOUQEOQYIFRYWCYVBWBVQKICRMWUEDXYCVAMRRYMCSRFMBGRNTLGTXRVJQKENAIFQZIIIJTATEHMUMVYZCZWPVHGLQUAOQDMVTBWBQAFJOXKVNQQTENVWACXBZRITVROUWLKJMBVRFWJXQYPWTKOIEFXKFLSBFKTTXVVFLVZKVMGQREEXQPPSEHBYIAVIBOHCJIFBVGHFPTSOFMFPLICERITWPDBZSPLIGEHUFXGVIGUGQJTGGASEVIEHEHUDHWMIXGKUWADTJMPMCFAVCTLCIXZVFIKMQGAQEHIKICGMSQIWIRGPBMCHAFJEKGDGROIERAQQFBAKIOLEVVFPDMPBUWMHBYIPXKSFVQKCQYASPXZVOGRLWFWZZFWMQCAFPRRPXTGNQLJYRITMGKMVUWBDOYHVKSHTEFVWBVRUBOBNWCIICMBVRVIDIVBUSGKMFVGMQQNOLVZGEWDZHVKWKGQBSRZDEVBWBGKMFVATVRPRUGYVXZGPLMEGGLPCJSZFQKLMCSSZFZKWQBTSZFZCUTMFHKLVGVZMCWWJCUMMAFFPRRIBVUGKQJEPVQSAWIIXKGBCNVKZIPVMHUHLVZGEWDZHVKSHVWACXBVVEHVHERTCIFVWAZXVZGCMQCAQMKAQKSGCUWEWGLMTSRZKPGLAOAGQEIZIMBFLDVGQGBOPWJVXYXMBCHWGPGHZQBPXLXGKACARXGSUBBSFLLVWQYBVRZWIPFKMDYDKZRIFWGGPIZPCGLANQGVBENZGVRVJAKMPHROMTSOFCBVFIKMQGATBUURRATXDYLKRXKHVGGKMJIEHVHNFBJQWLBPRPIUIUXKIEHIXEKGAHORBYICOMGQUWGTKGOOAGBYIKGRSPWQFRQYQZYHOZXKFIHRPMJWCZMGNWXIIUXVHU&quot;
-crack(odd, alpha, eng_freq)
-#crack(even, alpha, eng_freq)
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[对抗无聊的唯一出路-从消费到创造]]></title>
-        <id>https://Kurt-Pan.github.io/post/consume/</id>
-        <link href="https://Kurt-Pan.github.io/post/consume/">
-        </link>
-        <updated>2020-02-23T07:22:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>亲，手机是刷不完滴！📱👀</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>亲，手机是刷不完滴！📱👀</p>
-<!-- more -->
-<p>消费的不够就会感觉无聊，为了消解无聊感而必须去进行消费，而越消费，就越更需要消费，进而感到更多的无聊。这里的消费当然是指广义的消费，不仅包括消费金钱，还包括消费资源，消费时间，消费信息等一切内容。消费主义是资本主义意识形态的最新体现，是共产主义当前最大的拦路虎。</p>
-<blockquote>
-<p>The cure for boredom is not a constant stream of entertainment. It's creating something that wasn't there before.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-</blockquote>
-<blockquote>
-<p>意义永远不在于消费，而在于创造。<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
-</blockquote>
-<p>道理谁都懂，可是还是不自觉的拿着手机刷个不停。</p>
-<hr>
-<h2 id="电子游戏">电子游戏</h2>
-<p>《和平精英》（原《绝地求生：刺激战场》）这个手机“吃鸡”游戏，从18年春节游戏公测上线玩到今天，这么多赛季也上了七八次“超级王牌”段位了吧。上个月氪金了几百块，买了几套虚拟的lolita套装，也算是对开发设计者有所交代了吧。“吃鸡”的原始魅力其实是在于对于刘慈欣在小说中描绘的宇宙“黑暗森林”状态的模拟：</p>
-<blockquote>
-<p>宇宙就是一座黑暗森林，每个文明都是带枪的猎人，像幽灵般潜行于林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点儿声音，连呼吸都小心翼翼。他必须小心，因为林中到处都有与他一样潜行的猎人。如果他发现了别的生命，不管是不是猎人，不管是天使还是魔鬼，不管是娇嫩的婴儿还是步履蹒跚的老人，也不管是天仙般的少女还是天神般的男神，能做的只有一件事：开枪消灭之。 在这片森林中，他人就是地狱，就是永恒的威胁，任何暴露自己存在的生命都将很快被消灭。这就是宇宙文明的图景，这就是对费米悖论的解释。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
-</blockquote>
-<p>这种“大逃杀”式的玩法体现了某种真实的生存状态，所以吸引了我。但是现在已经对这个游戏彻底的厌倦了。现在的游戏基本上成为了一个社交的工具，基本上没有人玩单排。连红色的血都不能模拟还谈什么真实？鲜艳奇葩的衣服彻底消解了作为一个战场的紧张感。游戏已经沦为了一个靠随机性hook人的无聊的产品。</p>
-<p>至于《王者荣耀》，下了一下，狂点了一会儿屏幕，发泄了一下郁闷的心情，套路摸清楚后就删除了，毕竟是从“星际魔兽帝国红警”RTS时代过来的人，都对于MOBA游戏有着天生的优越感。对于“英雄”“技能”这种东西完全无感。</p>
-<p>对于所有单机游戏，输入秘籍的那一刻，就是游戏乐趣的终结。对于网络游戏，摸清楚游戏策划对于“留存率”的KPI指标，随机化的多巴胺反馈奖励系统等等这些套路以后，也就祛魅了。人生也是如此，如叔本华之“钟摆理论”所云：</p>
-<blockquote>
-<p>人生就是一团欲望。当欲望得不到满足便痛苦，当欲望得到满足便无聊，人生就像钟摆一样在痛苦与无聊之间摆荡。</p>
-</blockquote>
-<p>对此，我给自己立了一条规矩：一天不玩游戏，我就给自己奖励100元人民币，随意支配。这样我就去玩“挣钱”这个游戏去了，得到人民币的喜悦远远超越了一切游戏的获得。试问现在哪一个电子游戏有“挣钱”这个游戏好玩？我希望能坚持100天，那可是一万块啊！💴</p>
-<p>控制住游戏和看剧这两个东西，在现代社会你将无往而不胜。</p>
-<hr>
-<h2 id="网络考古">网络考古</h2>
-<p>《中国青年报》的一篇文章近来被某些公众号<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>拿出，带出了几个”10万+“阅读。我看了以后就好奇，为什么中国青年报的官方不发，非要一个第三方发呢。在好奇心的驱使下，我查找了中国青年报的<a href="zqb.cyol.com/html/">在线数据库</a>，查到了那个公众号文章的出处，原来是2010年的文章啊！然后才反过头来发现那个公众号的文章在月份后面自己加了个括号，注上了”2010“。2020年挖出2010年的文章，就如同今年过年那会儿被人挖出的1995年的王小波的《花剌子模信使问题》一样，都是借古讽今的挖坟行为。唯一的作用恐怕只是让人不要忘记过去曾经有过的时代风貌罢了。<br>
-搞NLP/Compiler/PLT的人没有不知道乔姆斯基的，但是对于他的左派激进的政治观念，我不懂，不评判。</p>
-<blockquote>
-<p>对于我能说清楚的东西，我就完完全全把它说清楚；对于我不懂的东西，我必须保持沉默。</p>
-</blockquote>
-<p>这话是我说的，当然是在仿照维特根斯坦的名句<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>，以表达一种为了把几件特定的事情真正干好而不得不采取的一种略微犬儒的态度。管好自己，保护好自己的家人和爱人，管他洪水滔天？<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup></p>
-<figure data-type="image" tabindex="1"><img src="https://Kurt-Pan.github.io/post-images/1582605790629.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>What is the cost of lies?<br>
-It's not that we'll mistake them for the truth.<br>
-The real danger is that if we hear enouth lies, then we no longer recognize the truth at all.<br>
-What can we do then?<br>
-What else is left but to abandon even the hope of truth and content ourselves instead with stories?<br>
-Because of our secrets and our lies，they're practically what define us.<br>
-When the truth offends, we lie and lie, until we can no longer remember it is even there.<br>
-But it is still there.<br>
-Every lies we tell incurs a debt to the truth.<br>
-Sooner or later, that debt is paid.<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup></p>
-</blockquote>
-<hr>
-<h2 id="写作">写作</h2>
-<p>写作作为一种高级别的<strong>创造</strong>方式，是所有想从消费转向创造的人一个很好的尝试起始点。</p>
-<blockquote>
-<p>写作是最好学习方法。它能训练多种高级思维（分析、评价和创造）。<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup></p>
-</blockquote>
-<p>写作很难，一开始你会不知道写什么，或者知道写什么但是就是写不好。但是和所有创作性活动一样，越写就越知道写什么，就越会写。所以在一开始不用在意写的好与不好，关键在于开始写。只要开始了，进入创造的循环，就摆脱了消费的循环，很快你就再也不会感到无聊。</p>
-<p>写作是一个信息传递的过程，作者将其脑海中的信息以文字为载体传递给读者，读者再依照大脑的阅读系统和理解系统加以处理。和任何信息传递过程一样，信息在这个过程中会被遗漏，压缩，扭曲，折损，再加上读者的信息处理系统的解码方式和能力参差不齐，最终导致“一千个读者心中有一千个哈姆雷特”<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup>的现象产生。</p>
-<p>写作是否会有隐私泄露的问题呢？比如说作者学会了一个知识，别人看了作者的文章之后立即学会了并且超越了作者。在我看来，这是小概率事件。因为从”学习金字塔“看，受益更大的一方是作者而不是读者，是信息的发送方而不是信息的接收方。且不说上述的信息损耗问题，单就”布道“的快感，就足以让隐居十年的查拉图斯特拉下山<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup>。</p>
-<p>另外如果故意以<strong>零知识</strong>的方式写文章，只要布几个简单的烟雾弹就行了，最简单的方式就是发糖，抚摸读者的情绪，予之以安慰和麻醉，而不是刺痛他们。在读者们”不明觉厉！“的欢呼中，相信所说的论断，但同时让他们什么都没有真正学到。</p>
-<p>当然，对于<strong>知我者</strong>们，那些是朋友和同路人的读者，自然应当敞开心扉，让他们和我一样，获得帮助，感到力量。</p>
-<blockquote>
-<p>If you don't learn anything from writing an essay, don't publish it.<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup></p>
-</blockquote>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>https://idiallo.com/blog/im-bored-what-do-i-do <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>L先生说：为什么我们越来越喜欢独处？ <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>刘慈欣, <em>《三体Ⅱ ：黑暗森林》</em> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn4" class="footnote-item"><p><a href="https://mp.weixin.qq.com/s?__biz=MzI2NDE0NTg4Nw==&amp;mid=2650474731&amp;idx=1&amp;sn=627f14addd8857543784ae137ed307bf&amp;exportkey=AXEqUI86x%2F34QvDYfLyKc1M%3D&amp;pass_ticket=Bl2gCtTsyTJjTJ5Z5jDzaGxBoP%2FZ%2BsNDbLZ7Wk04gVWG121%2Fe23iZUZKAThkRaZM">中国青年报：不要把伟大的批评者，当做国家的敌人</a> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn5" class="footnote-item"><p>L. Wittgenstein, <em>Tractatus Logico-Philosophicus</em> <a href="#fnref5" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn6" class="footnote-item"><p>这话不是Louis XV的原意，是中国人的渲染 <a href="#fnref6" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn7" class="footnote-item"><p>HBO, 2019, <em>Chernobyl</em> <a href="#fnref7" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn8" class="footnote-item"><p>女教授和生活的死磕：从教育学角度看，什么是最好的学习方式？ <a href="#fnref8" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn9" class="footnote-item"><p>这话是中国说法，Shakespeare从未说过 <a href="#fnref9" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn10" class="footnote-item"><p>F.Nietzsche, <em>Thus Spoke Zarathustra</em> <a href="#fnref10" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn11" class="footnote-item"><p>http://paulgraham.com/useful.html <a href="#fnref11" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[让人说话，天塌不下来]]></title>
-        <id>https://Kurt-Pan.github.io/post/speech/</id>
-        <link href="https://Kurt-Pan.github.io/post/speech/">
-        </link>
-        <updated>2020-02-11T07:31:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>随便说几句，姑且作为这个博客的开篇词👇</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>随便说几句，姑且作为这个博客的开篇词👇</p>
-<!-- more -->
-<p>因缘际会，又搭了一个博客，哈哈😅。过去我已成为搭博客小能手，从各种平台（知乎，Medium，简书，CSDN，<a href="https://writefreely.org/">WriteFreely</a> 等等）到WordPress，再到各种 <a href="https://www.staticgen.com/">static site generators</a>，数不胜数。但是最后没有一个坚持写下去的，都是写个一两篇就弃坑不用了。主要是因为去忙于他事了，还有就是没有反馈，不知道读者是谁。如果没有读者，或者根本就不需要别人看，那还不如去折腾笔记呢。事实上我就是一直在折腾电子笔记，哈哈。😝</p>
-<p>写作之意义唯有在日复一日的坚持中方能体现，而用什么平台、以什么形式呈现、甚至给谁看这些问题相比写作本身，并不是很重要。</p>
-<p>那要写些什么呢？有什么写什么吧。<br>
-我只是想说话而已。</p>
-<blockquote>
-<p>致将来或者过去，致那个思想自由的时代，致那个求同存异、毫不孤独的时代－－致那个真理尚存、历史无法被抹杀的时代：<br>
-从一个千篇一律的时代，从一个孤独的时代，从老大哥的时代，从一个双重思想的时代－－向您致敬！<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-</blockquote>
-<p>来自特定时代的人的记录本身就自有价值。我要写给未来的自己看，我要写给未来的孩子们看。我要写给未来，作为时代的见证。</p>
-<blockquote>
-<p>我的时代还没有到来，有的人死后方生。<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup><br>
-总有一天我会如愿以偿。这将是很远的一天，我不能亲眼看到了。那时候人们会打开我的书，我会有读者。我应该为他们写作。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup><br>
-－尼采</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>撒谎对自己有利的时候，为什么要说实话？</p>
-</blockquote>
-<p>八岁的路德维希<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord">⋅</span></span></span></span>维特根斯坦在一个门口停下来想这个问题，这是关于他的哲学思考最早的记录。他没有找到满意的答案，下结论说：在那种情况下撒谎说到底没任何错<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>。</p>
-<h3 id="花剌子模信使问题">花剌子模信使问题</h3>
-<p>中亚古国花剌子模有一古怪的风俗，凡是给君王带来好消息的信使，就会得到提升，给君王带来坏消息的人则会被送去喂老虎。就此，王小波专门写了一篇文章来讨论这个问题。<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup> 其中的<code>信使</code> 指代通过调查研究等手段，得出关于事实的一个个结论的人，包括学者，以至于所有的文化人。他们都是信息的产出者，是信息的中介。只不过他们的把这信息叫做不同的名字，有人说是学术，有人说是艺术，还有人说是新闻。而<code>君王</code>泛指通过接受信使发出的信息，根据信息进行社会决策的人，可以指公众，也可以指领导、当权者。君王和信使都可以具备<code>花剌子模</code>性质：花剌子模的君王具有一种近似天真的品行，以为奖励带来好消息的人，就能鼓励好消息的到来；处死带来坏消息的人，就能根绝坏消息。而花剌子模的信使当然尽是奸佞之人，狡猾之徒，递送坏消息时就会隐瞒不报，甚至滥加篡改，除非他想被送去喂老虎。王小波经过分析得到了以下三个结论：</p>
-<ul>
-<li><strong>结论1</strong>：对于学者来说，研究的结论会不会累及自身，是个带有根本性的问题。这主要取决于在学者周围有没有花剌子模君王类的人。</li>
-</ul>
-<p>同理，看到即将到来的危险到底要不要报告，也要睁大眼睛提前仔细看看你的<code>君王</code>是不是属于花剌子模的。</p>
-<ul>
-<li><strong>结论2</strong>：花剌子模的信使早晚要变得滑头起来，这是因为人对自己的处境有适应能力。</li>
-</ul>
-<p>人无法在生命权无法得以保证的时候去讨论道德。如果社会是<code>花剌子模</code>的，那作为君王，你只会听到战争节节胜利，“形势一片大好”的消息，直到成吉思汗兵临城下，取走你的首级。<br>
-支持废除死刑的一个理由是，如果知道自己会被处以死刑，犯罪分子对受害者施加的手段会更加残忍。道理也是类似。</p>
-<ul>
+    <div class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast" :class="{ '-mr-64': !showToc }">
+      <div class="flex mb-4 justify-end">
+        <div class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast" @click="showToc = false">
+          <i class="ri-close-line text-lg"></i>
+        </div>
+      </div>
+      <div class="post-toc-container">
+        <ul class="markdownIt-TOC">
 <li>
-<p><strong>结论3</strong>：假如一个人发现自己进了老虎笼子，那么就可以断言，他是个真正的信使。<br>
-RIP 李文亮</p>
-<pre><code>  李文亮，医生，新冠病毒疫情吹哨人，
-  2020年1月3日辖区派出所因其“在互联网上发布不实言论”对其提出警示和训诫，
-  1月10日左右出现感染症状，
-  2月7日凌晨因感染新冠病毒死亡。
-</code></pre>
+<ul>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84">实验目的</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9">实验内容</a>
+<ul>
+<li><a href="#how-des-works-in-detail">How DES Works in Detail</a>
+<ul>
+<li><a href="#step-1-create-16-subkeys-each-of-which-is-48-bits-long">Step 1: Create 16 subkeys, each of which is 48-bits long.</a></li>
+<li><a href="#step-2-encode-each-64-bit-block-of-data">Step 2: Encode each 64-bit block of data.</a></li>
+<li><a href="#how-the-function-f-works">How the function <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> works</a></li>
+</ul>
+</li>
+<li><a href="#how-to-use-aes-in-openssl-or-python">How to use AES in OpenSSL or Python</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E6%AD%A5%E9%AA%A4%E4%B8%8E%E8%BF%87%E7%A8%8B">实验步骤与过程</a>
+<ul>
+<li><a href="#1">1</a></li>
+<li><a href="#2">2</a></li>
+<li><a href="#3">3</a></li>
+<li><a href="#4">4</a></li>
+<li><a href="#5-%E8%A7%A3%E5%AF%86des%E5%AF%86%E6%96%87">5. 解密DES密文</a></li>
+<li><a href="#6-%E8%A7%A3%E5%AF%86aes%E5%AF%86%E6%96%87">6. 解密AES密文</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E8%A6%81%E6%B1%82%E5%92%8C%E8%AF%84%E5%88%86">实验要求和评分</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E6%8F%90%E4%BA%A4">实验提交</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">参考资料</a></li>
+<li><a href="#des_scaffoldpy">des_scaffold.py</a></li>
+</ul>
 </li>
 </ul>
-<h3 id="聪明人和傻子和奴才">聪明人和傻子和奴才</h3>
-<p>同样的道理鲁迅早就在一则寓言<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup> 中讲过了。奴才给聪明人诉苦，聪明人只是口头表示同情但从不给予实质性的帮助，尽说些很快会好的话。结果奴才很感激聪明人的同情，自认为得到了慰安。之后奴才又向傻子诉苦，说主人给他的房子没有窗子，结果傻子二话不说，动手就去砸那泥墙，想为奴才打出一个窗洞来。结果那奴才到处叫人来把傻子打跑了，然后在主人面前邀功说他赶跑了强盗。主人夸奖了奴才一句，奴才高兴的对聪明人说聪明人真有先见之明……<br>
-如果社会环境是如奴才一般闭目塞听，固步自封的，那这个社会的信息发送者也一定会像“聪明人”一样埋头眯着眼做好笑嘻嘻的犬儒的。</p>
-<p>任何一个极权形态的社会都对信息具有阻绝和扭曲作用。奥威尔《1984》中没有人会说出自己心中真实的想法，甚至于主动阉割思维，从源头杜绝自己说出不合时宜的话来，“思想罪并不导致死亡：思想罪就是死亡。”<sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup><a href="https://movie.douban.com/subject/26811587//">《大护法》</a>中的花生人干脆就没有嘴巴，从不能说话。人人都想听到好消息，甚至将消息的“好”放到了“真”之前。花剌子模的扭曲堕落也终于换来了蒙古大军屠城的“净化”。信息的阻绝和扭曲的问题在小规模低流通的古代社会影响还不算大，要是放在需要海量实时信息进行统筹决策的现代社会，这一点足以导致人类的终局。</p>
-<p>谣言，是偏离事实的话；而以权力甚至暴力作为裁决言论是否符合事实的唯一标准，首先是粗暴蛮横的，再考虑到现代社会的巨大分布式网络的现实，这也是愚蠢可笑的。</p>
-<p><strong>Do You Hear the People Sing?</strong> <sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup></p>
-<p>如果一个国家是花剌子模，那么我们也可以下结论说：在那个国家，撒谎说到底没任何错。</p>
-<hr>
-<p>最后，以毛主席的讲话作结：希望在这个时代，<code>君王</code>们能崇尚消息的真实可信，<code>信使</code>们能敢于说话，也想说出真话，这需要我们每个人的努力。</p>
-<blockquote>
-<p>让人讲话，天塌不下来。现在有些同志，很怕群众开展讨论，怕他们提出同领导机关、领导者意见不同的意见。一讨论问题，就压抑群众的积极性，不许人家讲话。这种态度非常恶劣。同志们，我们是干革命的，如果真正犯了错误，这种错误是不利于党的事业，不利于人民的事业的，就应当征求人民群众和同志们的意见，并且自己作检讨……不管是主动的，被动的，早作检讨，晚作检讨，只要正视错误，肯承认错误，肯改正错误，肯让群众批评，只要采取了这种态度，都应当欢迎。<br>
-－毛泽东<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup></p>
-</blockquote>
-<p>战“疫”必胜，天佑中华！✊</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>George Orwell, <em>1984</em> <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>F.Nietzsche, <em>《看哪这人》</em> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>伽列维, <em>《尼采的生平》</em> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn4" class="footnote-item"><p>Ray Monk, <em>Ludwig Wittgenstein: The Duty of Genius</em> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn5" class="footnote-item"><p>王小波, <em>《花剌子模信使问题》</em> <a href="#fnref5" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn6" class="footnote-item"><p>鲁迅, <em>《聪明人和傻子和奴才》</em> ,《野草集》 <a href="#fnref6" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn7" class="footnote-item"><p>雨果小说《悲惨世界》的同名改编音乐剧《悲惨世界》中的一首著名歌曲, 曲风激昂悲壮，被视为反极权统治的革命代表歌曲之一 <a href="#fnref7" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn8" class="footnote-item"><p>毛泽东,<em>《在扩大的中央工作会议上的讲话》</em>（一九六二年一月三十日） <a href="#fnref8" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-]]></content>
-    </entry>
-</feed>
+
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <div class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200" @click="backToUp" v-show="scrolled">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe. 
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg">
+  </div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+      <div class="pswp__item">
+      </div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter">
+        </div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip">
+        </div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://Kurt-Pan.github.io/media/scripts/main.js"></script>
+  
+  <!-- Code Highlight -->
+  
+    <script src="https://Kurt-Pan.github.io/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+  <script>
+    //拿到预览框架，也就是上面的html代码
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    //定义图片数组变量
+    var imgitems;
+    /**
+    * 用于显示预览界面
+    * @param index 图片数组下标
+    */
+    function viewImg(index) {
+      //其它选项这里不做过多阐述，详情见官网
+      var pswpoptions = {
+        index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+        bgOpacity: 0.7, // 背景透明度，0-1
+        maxSpreadZoom: 3, // 缩放级别，不要太大
+      };
+      //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+      var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, imgitems, pswpoptions);
+      gallery.init()
+    }
+    /**
+    * 用于添加图片点击事件
+    * @param img 图片元素
+    * @param index 所属下标（在imgitems中的位置）
+    */
+    function addImgClick(img, index) {
+      img.onclick = function() {
+        viewImg(index)
+      }
+    }
+    /**
+    * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+    * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+    * 异步加载图片可在图片元素创建完成后调用此方法
+    */
+    function initImg() {
+      //重置图片数组
+      imgitems = [];
+      //查找class:markdown 下的所有img元素并遍历
+      var imgs = document.querySelectorAll('.markdown img');
+      for (var i = 0; i < imgs.length; i++) {
+        var img = imgs[i];
+        //本站相册初始为loading图片，真实图片放在data-src
+        var ds = img.getAttribute("data-src");
+        //创建image对象，用于获取图片宽高
+        var imgtemp = new Image();
+        //判断是否存在data-src
+        if (ds != null && ds.length > 0) {
+          imgtemp.src = ds
+        } else {
+          imgtemp.src = img.src
+        }
+        //判断是否存在缓存
+        if (imgtemp.complete) {
+          var imgobj = {
+            "src": imgtemp.src,
+            "w": imgtemp.width,
+            "h": imgtemp.height,
+          };
+          imgitems[i] = imgobj;
+          addImgClick(img, i);
+        } else {
+          console.log('进来了2')
+          imgtemp.index = i;
+          imgtemp.img = img;
+          imgtemp.onload = function() {
+            var imgobj = {
+              "src": this.src,
+              "w": this.width,
+              "h": this.height,
+            };
+            //不要使用push，因为onload前后顺序会不同
+            imgitems[this.index] = imgobj
+            //添加点击事件
+            addImgClick(this.img, this.index);
+          }
+        }
+      }
+    }
+    //初始化
+    initImg();
+  </script>
+</body>
+
+</html>
