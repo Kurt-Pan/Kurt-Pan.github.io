@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-03-26T15:16:57.662Z</updated>
+    <updated>2020-03-27T01:00:41.861Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -69,26 +69,76 @@ and apply a final permutation <span class="katex"><span class="katex-mathml"><ma
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="bold-italic">f</mi><mo>=</mo><mi mathvariant="bold">P</mi><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">S</mi><mn mathvariant="bold-italic">1</mn></msub><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">B</mi><mn mathvariant="bold-italic">1</mn></msub><mo fence="true">)</mo></mrow><msub><mi mathvariant="bold">S</mi><mn>2</mn></msub><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">B</mi><mn mathvariant="bold-italic">2</mn></msub><mo fence="true">)</mo></mrow><mo>…</mo><msub><mi mathvariant="bold-italic">S</mi><mn>8</mn></msub><mrow><mo fence="true">(</mo><msub><mi mathvariant="bold-italic">B</mi><mn>8</mn></msub><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\boldsymbol{f}=\mathbf{P}\left(\boldsymbol{S}_{\boldsymbol{1}}\left(\boldsymbol{B}_{\boldsymbol{1}}\right) \mathbf{S}_{2}\left(\boldsymbol{B}_{\boldsymbol{2}}\right) \ldots \boldsymbol{S}_{8}\left(\boldsymbol{B}_{8}\right)\right)
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.11042em;">f</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathbf">P</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.05382em;">S</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathbf mtight">1</span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.04835em;">B</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathbf mtight">1</span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">S</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.04835em;">B</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathbf mtight">2</span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.05382em;">S</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.04835em;">B</span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
 <h3 id="how-to-use-aes-in-openssl-or-python">How to use AES in OpenSSL or Python</h3>
+<p><strong>OpenSSL</strong> (recommended) is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a <em>general-purpose cryptography library</em>.</p>
+<p>You can use the command line tool <strong>Enc</strong> for encryption and decryption. <strong>Enc</strong> is used for various block and stream ciphers using keys based on passwords or explicitly provided:</p>
 <ul>
 <li>https://wiki.openssl.org/index.php/Enc</li>
+</ul>
+<p><strong>PyCryptodome</strong> is a self-contained Python package of low-level cryptographic primitives.</p>
+<p>You can also use the  <strong>AES</strong> module it provided:</p>
+<ul>
 <li>https://www.pycryptodome.org/en/latest/src/cipher/aes.html</li>
 </ul>
 <h2 id="实验步骤与过程">实验步骤与过程</h2>
 <p>实现如下四个DES函数：</p>
-<h3 id="1">1</h3>
+<h3 id="1">1.</h3>
 <pre><code class="language-python">def permutation_by_table(block, block_len, table):
 	'''block of length block_len permutated by table table'''
 </code></pre>
-<h3 id="2">2</h3>
+<h3 id="2">2.</h3>
 <pre><code class="language-python">def generate_round_keys(C0, D0):
     '''returns dict of 16 keys (one for each round)'''
+    lrot_values = (1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1)
+    # initial rotation
+    
+    # create 16 more different key pairs
+    # WRITE YOUR CODE HERE!
+    
+    #form the keys from concatenated CiDi 1&lt;=i&lt;=16 and by apllying PC2
+    # WRITE YOUR CODE HERE!
 	return round_keys
 </code></pre>
-<h3 id="3">3</h3>
+<h3 id="3">3.</h3>
 <pre><code class="language-python">def round_function(Ri, Ki):
+	# expand Ri from 32 to 48 bit using table E
+    Ri = permutation_by_table(Ri, 32, E)
+ 
+    # xor with round key
+    # WRITE YOUR CODE HERE!
+ 
+    # split Ri into 8 groups of 6 bit
+    # WRITE YOUR CODE HERE!
+ 
+    # interpret each block as address for the S-boxes
+    # WRITE YOUR CODE HERE!
+ 
+    # pack the blocks together again by concatenating
+    # WRITE YOUR CODE HERE!
+ 
+    # another permutation 32bit -&gt; 32bit
+    Ri = permutation_by_table(Ri, 32, P)
 </code></pre>
-<h3 id="4">4</h3>
+<h3 id="4">4.</h3>
 <pre><code class="language-python">def encrypt(msg, key, decrypt=False):
+	# permutate by table PC1
+    key = permutation_by_table(key, 64, PC1) # 64bit -&gt; PC1 -&gt; 56bit
+ 
+    # split up key in two halves
+    # WRITE YOUR CODE HERE!
+
+    # generate the 16 round keys
+    round_keys = generate_round_keys(C0, D0) # 56bit -&gt; PC2 -&gt; 48bit
+ 
+    msg_block = permutation_by_table(msg, 64, IP)
+    # WRITE YOUR CODE HERE!
+ 
+    # apply round function 16 times (Feistel Network):
+    # WRITE YOUR CODE HERE!
+ 
+    # final permutation
+    cipher_block = permutation_by_table(cipher_block, 64, IP_INV)
+ 
+    return cipher_block
 </code></pre>
 <h3 id="5-解密des密文">5. 解密DES密文</h3>
 <blockquote>
@@ -159,7 +209,7 @@ openssl enc -d -aes256 -in even.enc -out even.plain
 </tbody>
 </table>
 <blockquote>
-<p>实现各种加密模式(mode)，可以有适当加分～</p>
+<p>实现各种加密模式(<strong>mode</strong>)，<strong>3DES</strong>，可有适当加分.</p>
 </blockquote>
 <h2 id="实验提交">实验提交</h2>
 <ul>
