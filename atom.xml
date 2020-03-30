@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-03-27T02:05:31.264Z</updated>
+    <updated>2020-03-30T03:02:58.831Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第32期]]></title>
+        <id>https://Kurt-Pan.github.io/post/032/</id>
+        <link href="https://Kurt-Pan.github.io/post/032/">
+        </link>
+        <updated>2020-03-28T05:32:03.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTgyNjE4MQ==&amp;mid=2652484182&amp;idx=1&amp;sn=f0717efb16515a003a5502660f178ee0&amp;chksm=84408e3cb337072af28e11f00fe00982972bfedc9edfe7d91df02cdb701b0d04cd3ffb4403ed&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1585106719211&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=ASPOzlAPS2n5czIKSXgQlh0%3D&amp;pass_ticket=N8pDuZ8ohGnwbR9ESjr2judnqVdHKLvtDzZ1BUIc8QC1BkkoXGOx4hKbn0dGqJiz#rd">批判反思的舆论高地，我们不去占领，敌人就会占领 </a></p>
+</li>
+<li>
+<p>[2020 年，如何才能拥有一个个人网站？ ](2020 年，如何才能拥有一个个人网站？ )</p>
+</li>
+<li>
+<p><a href="http://www.ruanyifeng.com/blog/2020/03/the-world-after-coronavirus.html">尤瓦尔·赫拉利《冠状病毒之后的世界》</a></p>
+</li>
+<li>
+<p><a href="https://web.stanford.edu/class/cs253/">Stanford CS 253 Web Security Fall 2019</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts">GitHub中文排行榜</a></p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实验二 DES&AES]]></title>
         <id>https://Kurt-Pan.github.io/post/desaes/</id>
@@ -432,7 +457,7 @@ def encrypt(msg, key, decrypt=False):
 
 def decrypt(cipher_text, key):
     plain_text = encrypt(cipher_text, key, decrypt=True)
-    print('Plain Text: '+ bytearray.fromhex(plain_text).decode()))
+    print('Plain Text: '+ bytearray.fromhex(hex(plain_text)[2:]).decode())
 
 import binascii
 key = int(binascii.hexlify(b'FudanNiu') , 16)

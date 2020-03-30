@@ -507,7 +507,7 @@ def encrypt(msg, key, decrypt=False):
 
 def decrypt(cipher_text, key):
     plain_text = encrypt(cipher_text, key, decrypt=True)
-    print('Plain Text: '+ bytearray.fromhex(plain_text).decode()))
+    print('Plain Text: '+ bytearray.fromhex(hex(plain_text)[2:]).decode())
 
 import binascii
 key = int(binascii.hexlify(b'FudanNiu') , 16)
