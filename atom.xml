@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-03-30T04:20:05.973Z</updated>
+    <updated>2020-04-05T09:46:36.122Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,109 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第33期]]></title>
+        <id>https://Kurt-Pan.github.io/post/033/</id>
+        <link href="https://Kurt-Pan.github.io/post/033/">
+        </link>
+        <updated>2020-04-04T02:21:23.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p><a href="https://sspai.com/post/59652">2020 年，我的微信公众号 Windows 平台流程化写作与发布心得 </a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&amp;mid=2649869562&amp;idx=1&amp;sn=52e45ae41aa932bf23895a9cf27e7c27&amp;chksm=f1075697c670df81beebd4438d915cd0996453e18fd719bf4d25f3636205125d2014331bf7c5&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1586051719442&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=Adnj270HDhZaF8rNmzoA5d0%3D&amp;pass_ticket=JNvJBrafbGpKOzaf7SNeRME66mEvO5hd9VHiVkdWQrwyUfWcM%2B3FpYZ0g3jrjuxY#rd">防火防盗防学长 </a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651025451&amp;idx=2&amp;sn=3e870ed29344e757b50fbc997be320eb&amp;chksm=bdbe88788ac9016e8f47edc85061c3a14b662439bf5da6da5a977ad720fa25d6d408efa0e4e3&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1585965251115&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=AXdkf3w%2BvlksPD6bEhPL8JQ%3D&amp;pass_ticket=trM6lxmQP3JUFY7yAnoFPekYhNl1a6IR33iRVPskgm3wZeQSP6CyIhQd3fibnXkR#rd">一周曝出N个安全问题，风口上的Zoom宣布停更90天 </a></p>
+<ul>
+<li><a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">ZOOM MEETINGS AREN’T END-TO-END ENCRYPTED, DESPITE MISLEADING MARKETING</a></li>
+<li><a href="https://theintercept.com/2020/04/03/zooms-encryption-is-not-suited-for-secrets-and-has-surprising-links-to-china-researchers-discover/">ZOOM’S ENCRYPTION IS “NOT SUITED FOR SECRETS” AND HAS SURPRISING LINKS TO CHINA, RESEARCHERS DISCOVER</a></li>
+<li><a href="https://citizenlab.ca/2020/04/move-fast-roll-your-own-crypto-a-quick-look-at-the-confidentiality-of-zoom-meetings/">A Quick Look at the Confidentiality of Zoom Meetings</a></li>
+<li><a href="https://blog.zoom.us/wordpress/2020/04/01/facts-around-zoom-encryption-for-meetings-webinars/">The Facts Around Zoom and Encryption for Meetings/Webinars</a></li>
+<li><a href="https://www.fsf.org/blogs/community/better-than-zoom-try-these-free-software-tools-for-staying-in-touch">Better than Zoom: Try these free software tools for staying in touch</a></li>
+<li><a href="https://webrtchacks.com/you-dont-have-end-to-end-encryption-e2ee/">Does your video call have End-to-End Encryption? Probably not..</a></li>
+<li><a href="https://krebsonsecurity.com/2020/04/war-dialing-tool-exposes-zooms-password-problems/">‘War Dialing’ Tool Exposes Zoom’s Password Problems</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://lore.kernel.org/wireguard/CAHmME9qOpDeraWo5rM31EWQW574KEduRBTL-+0A2ZyqBNDeYkg@mail.gmail.com/T/#u">WireGuard 1.0.0 for Linux 5.6 Released</a></p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3NDM0ODQwMw==&amp;mid=2649828356&amp;idx=1&amp;sn=0cfcf0de0a6a3c1fe9d1fc8d9e7df5f1&amp;chksm=8704ae18b073270e2e7ced09f29846ebc38affed8cb023410f995ee829ceedaddaa7b80cadbe&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1586054845327&amp;sharer_shareid=7c6ea0f01edcbbbe10fd3a1cb96c9aa1&amp;exportkey=AXUD2Mzy9QvD60TK1It32A8%3D&amp;pass_ticket=trM6lxmQP3JUFY7yAnoFPekYhNl1a6IR33iRVPskgm3wZeQSP6CyIhQd3fibnXkR#rd">Wireguard：简约之美 </a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://cn.nytimes.com/opinion/20200325/coronavirus-trends/">新冠病毒大流行之后的世界</a></p>
+</li>
+<li>
+<p><a href="https://www.fastcompany.com/90479846/the-untold-origin-story-of-the-n95-mask">The untold origin story of the N95 mask</a></p>
+</li>
+<li>
+<p><a href="https://reperiendi.wordpress.com/2020/04/03/how-i-recovered-over-300k-of-bitcoin/">How we recovered over $300K of Bitcoin</a></p>
+</li>
+<li>
+<p><a href="https://gravitational.com/blog/how-to-ssh-properly/">How to SSH Properly</a></p>
+</li>
+<li>
+<p><a href="https://julian.digital/2020/03/28/signaling-as-a-service/">Signaling as a Service</a></p>
+</li>
+<li>
+<p><a href="https://blog.yoshuawuyts.com/state-machines/">STATE MACHINES</a></p>
+</li>
+<li>
+<p><a href="https://cjting.me/2020/03/13/rsa/">RSA 的原理与实现</a></p>
+</li>
+<li>
+<p><a href="https://www.florio.dev/20200328-letter-to-myself/">A letter to myself as a fresh software engineer</a></p>
+</li>
+<li>
+<p><a href="https://ericlippert.com/2020/03/27/new-grad-vs-senior-dev/">New grad vs senior dev</a></p>
+</li>
+<li>
+<p><a href="http://smyachenkov.com/posts/cognitive-biases-software-development/">Cognitive Biases In Software Development</a></p>
+</li>
+<li>
+<p><a href="https://increment.com/programming-languages/crash-course-in-compilers/">A crash course in compilers</a></p>
+</li>
+<li>
+<p><a href="https://physicstravelguide.com/">The Physics Travel Guide </a></p>
+</li>
+<li>
+<p><a href="https://os.phil-opp.com/">Writing an OS in Rust</a></p>
+</li>
+<li>
+<p>https://learnbyexample.github.io/books/</p>
+</li>
+<li>
+<p>https://dl.acm.org/</p>
+<ul>
+<li>https://dl.acm.org/acmbooks</li>
+</ul>
+</li>
+<li>
+<p><a href="https://obsproject.com/">OBS Studio</a> : video recording and live streaming</p>
+</li>
+<li>
+<p><a href="https://www.videopuppet.com/docs/script/">Video Puppet</a></p>
+</li>
+<li>
+<p>https://timecop.app/</p>
+</li>
+<li>
+<p>https://pdfjs.express/</p>
+</li>
+<li>
+<p>https://nim-lang.org/</p>
+</li>
+<li>
+<p>https://www.dolthub.com/</p>
+</li>
+<li>
+<p>https://tailscale.com/</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[每周分享第32期]]></title>
         <id>https://Kurt-Pan.github.io/post/032/</id>
