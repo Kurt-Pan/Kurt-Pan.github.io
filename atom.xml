@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-04-05T09:46:36.122Z</updated>
+    <updated>2020-04-11T04:22:50.985Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第34期]]></title>
+        <id>https://Kurt-Pan.github.io/post/034/</id>
+        <link href="https://Kurt-Pan.github.io/post/034/">
+        </link>
+        <updated>2020-04-11T02:43:35.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI0MjA1Mjg2Ng==&amp;mid=2649869570&amp;idx=1&amp;sn=05fcef2037c119433a6e90d29593cfd2&amp;chksm=f107576fc670de79cd11dc3b8a426ef1f84f7a8f11befc2aa06eeb87ba2290eca798f6958eca&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1586419608055&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=ASOfFpnBbcO8F5ZcuzfQ2EU%3D&amp;pass_ticket=P2d%2FLsjZBvWRiaq48dvtRhJ2omAlkUl%2B3GodGG7f34QaES%2BhvYqCRd2D8EF2bKad#rd">做一条快乐的小杂鱼不好么 </a></li>
+<li><a href="https://miguelmota.com/blog/getting-started-with-wireguard/">Getting Started with WireGuard</a></li>
+<li><a href="https://www.nytimes.com/2020/04/07/smarter-living/how-to-edit-your-own-writing.html">How to Edit Your Own Writing</a></li>
+<li><a href="https://plausible.io/blog/remove-google-analytics">Why you should stop using Google Analytics on your website</a></li>
+<li><a href="https://blog.nelhage.com/post/systems-that-defy-understanding/">Systems that defy detailed understanding</a></li>
+<li><a href="https://dfrieds.com/articles/data-science-reality-vs-expectations.html">Data Science: Reality Doesn't Meet Expectations</a></li>
+<li><a href="https://beepb00p.xyz/configs-suck.html">Your configs suck? Try a real programming language.</a></li>
+<li><a href="https://tryolabs.com/blog/2020/04/02/swift-googles-bet-on-differentiable-programming/">Swift: Google's bet on differentiable programming</a></li>
+<li><a href="https://elder.dev/posts/open-source-virtual-background/">Open Source Virtual Background</a></li>
+<li><a href="http://journal.stuffwithstuff.com/2020/04/05/crafting-crafting-interpreters/">Crafting &quot;Crafting Interpreters&quot;</a></li>
+<li><a href="https://www.cl.cam.ac.uk/~rja14/book.html">Security Engineering — Third Edition</a></li>
+<li>https://landing.google.com/sre/books/</li>
+<li>https://markmap.js.org/ : markdown + mindmap + library</li>
+<li>https://wiki.debian.org/WhyTheName</li>
+<li>https://jitsi.org/</li>
+<li>https://icq.com/desktop</li>
+<li>https://www.freerdp.com/</li>
+<li>https://zapier.com/home</li>
+<li>https://theia-ide.org/</li>
+<li>https://github.com/google/jax</li>
+<li>https://mosh.org/</li>
+<li>https://rclone.org/</li>
+<li>https://signal.org/</li>
+<li>https://repl.it/</li>
+<li>https://github.com/mifi/lossless-cut</li>
+<li>https://www.deepl.com/home</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[每周分享第33期]]></title>
         <id>https://Kurt-Pan.github.io/post/033/</id>
