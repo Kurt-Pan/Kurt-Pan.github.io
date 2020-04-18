@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-04-16T13:21:15.175Z</updated>
+    <updated>2020-04-18T14:09:19.730Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,53 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第35期]]></title>
+        <id>https://Kurt-Pan.github.io/post/035/</id>
+        <link href="https://Kurt-Pan.github.io/post/035/">
+        </link>
+        <updated>2020-04-18T01:47:58.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=Mzg2OTA3OTU3Nw==&amp;mid=2247484795&amp;idx=1&amp;sn=b16122d9cea9485d218238282c15b403&amp;chksm=cea3ca0df9d4431b77d4b065333584eb47c09133c8cb2b52076fc4ced08b2da11c1d7f34234c&amp;mpshare=1&amp;scene=2&amp;srcid=&amp;sharer_sharetime=1586704146304&amp;sharer_shareid=7c6ea0f01edcbbbe10fd3a1cb96c9aa1&amp;from=timeline&amp;exportkey=AZO3bw37Poo62HPfAnGEHZw%3D&amp;pass_ticket=LUQZsOB06AYVic0%2F5bMrbimmtgjML8QP3%2BRtV52KQm8wA%2FY8s8HQzwKAO5kgXnYQ#rd">美元向左，比特币向右 </a></li>
+<li><a href="https://jitsi.org/blog/e2ee/">This is what end-to-end encryption should look like!</a></li>
+<li><a href="https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/">The Computer Scientist Who Can’t Stop Telling Stories</a></li>
+<li><a href="https://writings.stephenwolfram.com/2020/04/finally-we-may-have-a-path-to-the-fundamental-theory-of-physics-and-its-beautiful/">Finally We May Have a Path to the Fundamental Theory of Physics…and It’s Beautiful</a></li>
+<li><a href="https://datagubbe.se/decusab/">The Decline of Usability</a></li>
+<li><a href="https://www.wired.com/story/lee-holloway-devastating-decline-brilliant-young-coder/">The Devastating Decline of a Brilliant Young Coder</a></li>
+<li><a href="https://www.quantamagazine.org/john-conways-life-in-games-20150828/">A Life in Games</a></li>
+<li>https://terrytao.wordpress.com/2020/04/12/john-conway/</li>
+<li><a href="https://blog.cloudflare.com/http-3-vs-http-2/">Comparing HTTP/3 vs. HTTP/2 Performance</a></li>
+<li><a href="https://angristan.xyz/2020/04/nextdns/">NextDNS is my new favourite DNS service</a></li>
+<li><a href="https://cheapskatesguide.org/articles/encrypted-email.html">Now I Understand why Almost No One uses Encrypted Email</a></li>
+<li><a href="https://rolisz.ro/2020/04/11/moving-away-from-gmail/">Moving away from GMail</a></li>
+<li><a href="https://tools.ietf.org/html/rfc1180">RFC1180: A TCP/IP Tutorial (1991)</a></li>
+<li><a href="https://nora.codes/post/stop-making-students-use-eclipse/">Stop Making Students Use Eclipse</a></li>
+<li><a href="https://blog.patchgirl.io/nixos/2020/03/31/nixos.html">Building a web app with functional programming - NixOS</a></li>
+<li><a href="http://dev.stephendiehl.com/hask/">WHAT I WISH I KNEW WHEN LEARNING HASKELL</a></li>
+<li><a href="https://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/">So You Want to Be a (Compiler) Wizard</a></li>
+<li><a href="https://notes.eatonphil.com/database-basics.html">Database basics: writing a SQL database from scratch in Go</a></li>
+<li><a href="https://isbgpsafeyet.com/">Is BGP safe yet? No.</a></li>
+<li><a href="https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html">Technical reasons to choose FreeBSD over GNU/Linux</a></li>
+<li><a href="http://nibblestew.blogspot.com/2020/04/your-statement-is-100-correct-but.html?m=1">Your statement is 100% correct but misses the entire point</a></li>
+<li><a href="https://rachelbythebay.com/w/2020/04/11/pengrun/">Bored? How about trying a Linux speed run?</a></li>
+<li><a href="https://grahamc.com/blog/erase-your-darlings">Erase your darlings</a></li>
+<li><a href="https://malleable.systems/">Malleable Systems Collective</a></li>
+<li><a href="https://github.com/rust-lang/mdBook">mdBook</a> : mdBook is a utility to create modern online books from Markdown files.</li>
+<li><a href="https://keleshev.com/my-book-writing-setup/">Writing a Book with Pandoc, Make, and Vim</a></li>
+<li><a href="https://utf8everywhere.org/">UTF-8 Everywhere</a></li>
+<li><a href="https://gist.github.com/premek/6e70446cfc913d3c929d7cdbfe896fef">Rename files in linux / bash using mv command without typing the full name two times</a></li>
+<li>https://protonmail.com/</li>
+<li>https://dj3d.io/</li>
+<li>https://zoomerbackgrounds.com/</li>
+<li>https://www.pulumi.com/</li>
+<li>https://workstream.paperspace.com/</li>
+<li>https://www.keycloak.org/</li>
+<li>https://plotly.com/</li>
+<li>https://inkscape.org/</li>
+<li>https://colornames.org/</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实验三 RSA]]></title>
         <id>https://Kurt-Pan.github.io/post/rsa/</id>
@@ -1391,94 +1438,6 @@ Sooner or later, that debt is paid.<sup class="footnote-ref"><a href="#fn7" id="
 <li id="fn10" class="footnote-item"><p>F.Nietzsche, <em>Thus Spoke Zarathustra</em> <a href="#fnref10" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn11" class="footnote-item"><p>http://paulgraham.com/useful.html <a href="#fnref11" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[让人说话，天塌不下来]]></title>
-        <id>https://Kurt-Pan.github.io/post/speech/</id>
-        <link href="https://Kurt-Pan.github.io/post/speech/">
-        </link>
-        <updated>2020-02-11T07:31:40.000Z</updated>
-        <summary type="html"><![CDATA[<p>随便说几句，姑且作为这个博客的开篇词👇</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>随便说几句，姑且作为这个博客的开篇词👇</p>
-<!-- more -->
-<p>因缘际会，又搭了一个博客，哈哈😅。过去我已成为搭博客小能手，从各种平台（知乎，Medium，简书，CSDN，<a href="https://writefreely.org/">WriteFreely</a> 等等）到WordPress，再到各种 <a href="https://www.staticgen.com/">static site generators</a>，数不胜数。但是最后没有一个坚持写下去的，都是写个一两篇就弃坑不用了。主要是因为去忙于他事了，还有就是没有反馈，不知道读者是谁。如果没有读者，或者根本就不需要别人看，那还不如去折腾笔记呢。事实上我就是一直在折腾电子笔记，哈哈。😝</p>
-<p>写作之意义唯有在日复一日的坚持中方能体现，而用什么平台、以什么形式呈现、甚至给谁看这些问题相比写作本身，并不是很重要。</p>
-<p>那要写些什么呢？有什么写什么吧。<br>
-我只是想说话而已。</p>
-<blockquote>
-<p>致将来或者过去，致那个思想自由的时代，致那个求同存异、毫不孤独的时代－－致那个真理尚存、历史无法被抹杀的时代：<br>
-从一个千篇一律的时代，从一个孤独的时代，从老大哥的时代，从一个双重思想的时代－－向您致敬！<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
-</blockquote>
-<p>来自特定时代的人的记录本身就自有价值。我要写给未来的自己看，我要写给未来的孩子们看。我要写给未来，作为时代的见证。</p>
-<blockquote>
-<p>我的时代还没有到来，有的人死后方生。<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup><br>
-总有一天我会如愿以偿。这将是很远的一天，我不能亲眼看到了。那时候人们会打开我的书，我会有读者。我应该为他们写作。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup><br>
-－尼采</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>撒谎对自己有利的时候，为什么要说实话？</p>
-</blockquote>
-<p>八岁的路德维希<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.44445em;vertical-align:0em;"></span><span class="mord">⋅</span></span></span></span>维特根斯坦在一个门口停下来想这个问题，这是关于他的哲学思考最早的记录。他没有找到满意的答案，下结论说：在那种情况下撒谎说到底没任何错<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>。</p>
-<h3 id="花剌子模信使问题">花剌子模信使问题</h3>
-<p>中亚古国花剌子模有一古怪的风俗，凡是给君王带来好消息的信使，就会得到提升，给君王带来坏消息的人则会被送去喂老虎。就此，王小波专门写了一篇文章来讨论这个问题。<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup> 其中的<code>信使</code> 指代通过调查研究等手段，得出关于事实的一个个结论的人，包括学者，以至于所有的文化人。他们都是信息的产出者，是信息的中介。只不过他们的把这信息叫做不同的名字，有人说是学术，有人说是艺术，还有人说是新闻。而<code>君王</code>泛指通过接受信使发出的信息，根据信息进行社会决策的人，可以指公众，也可以指领导、当权者。君王和信使都可以具备<code>花剌子模</code>性质：花剌子模的君王具有一种近似天真的品行，以为奖励带来好消息的人，就能鼓励好消息的到来；处死带来坏消息的人，就能根绝坏消息。而花剌子模的信使当然尽是奸佞之人，狡猾之徒，递送坏消息时就会隐瞒不报，甚至滥加篡改，除非他想被送去喂老虎。王小波经过分析得到了以下三个结论：</p>
-<ul>
-<li><strong>结论1</strong>：对于学者来说，研究的结论会不会累及自身，是个带有根本性的问题。这主要取决于在学者周围有没有花剌子模君王类的人。</li>
-</ul>
-<p>同理，看到即将到来的危险到底要不要报告，也要睁大眼睛提前仔细看看你的<code>君王</code>是不是属于花剌子模的。</p>
-<ul>
-<li><strong>结论2</strong>：花剌子模的信使早晚要变得滑头起来，这是因为人对自己的处境有适应能力。</li>
-</ul>
-<p>人无法在生命权无法得以保证的时候去讨论道德。如果社会是<code>花剌子模</code>的，那作为君王，你只会听到战争节节胜利，“形势一片大好”的消息，直到成吉思汗兵临城下，取走你的首级。<br>
-支持废除死刑的一个理由是，如果知道自己会被处以死刑，犯罪分子对受害者施加的手段会更加残忍。道理也是类似。</p>
-<ul>
-<li>
-<p><strong>结论3</strong>：假如一个人发现自己进了老虎笼子，那么就可以断言，他是个真正的信使。<br>
-RIP 李文亮</p>
-<pre><code>  李文亮，医生，新冠病毒疫情吹哨人，
-  2020年1月3日辖区派出所因其“在互联网上发布不实言论”对其提出警示和训诫，
-  1月10日左右出现感染症状，
-  2月7日凌晨因感染新冠病毒死亡。
-</code></pre>
-</li>
-</ul>
-<h3 id="聪明人和傻子和奴才">聪明人和傻子和奴才</h3>
-<p>同样的道理鲁迅早就在一则寓言<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup> 中讲过了。奴才给聪明人诉苦，聪明人只是口头表示同情但从不给予实质性的帮助，尽说些很快会好的话。结果奴才很感激聪明人的同情，自认为得到了慰安。之后奴才又向傻子诉苦，说主人给他的房子没有窗子，结果傻子二话不说，动手就去砸那泥墙，想为奴才打出一个窗洞来。结果那奴才到处叫人来把傻子打跑了，然后在主人面前邀功说他赶跑了强盗。主人夸奖了奴才一句，奴才高兴的对聪明人说聪明人真有先见之明……<br>
-如果社会环境是如奴才一般闭目塞听，固步自封的，那这个社会的信息发送者也一定会像“聪明人”一样埋头眯着眼做好笑嘻嘻的犬儒的。</p>
-<p>任何一个极权形态的社会都对信息具有阻绝和扭曲作用。奥威尔《1984》中没有人会说出自己心中真实的想法，甚至于主动阉割思维，从源头杜绝自己说出不合时宜的话来，“思想罪并不导致死亡：思想罪就是死亡。”<sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup><a href="https://movie.douban.com/subject/26811587//">《大护法》</a>中的花生人干脆就没有嘴巴，从不能说话。人人都想听到好消息，甚至将消息的“好”放到了“真”之前。花剌子模的扭曲堕落也终于换来了蒙古大军屠城的“净化”。信息的阻绝和扭曲的问题在小规模低流通的古代社会影响还不算大，要是放在需要海量实时信息进行统筹决策的现代社会，这一点足以导致人类的终局。</p>
-<p>谣言，是偏离事实的话；而以权力甚至暴力作为裁决言论是否符合事实的唯一标准，首先是粗暴蛮横的，再考虑到现代社会的巨大分布式网络的现实，这也是愚蠢可笑的。</p>
-<p><strong>Do You Hear the People Sing?</strong> <sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup></p>
-<p>如果一个国家是花剌子模，那么我们也可以下结论说：在那个国家，撒谎说到底没任何错。</p>
-<hr>
-<p>最后，以毛主席的讲话作结：希望在这个时代，<code>君王</code>们能崇尚消息的真实可信，<code>信使</code>们能敢于说话，也想说出真话，这需要我们每个人的努力。</p>
-<blockquote>
-<p>让人讲话，天塌不下来。现在有些同志，很怕群众开展讨论，怕他们提出同领导机关、领导者意见不同的意见。一讨论问题，就压抑群众的积极性，不许人家讲话。这种态度非常恶劣。同志们，我们是干革命的，如果真正犯了错误，这种错误是不利于党的事业，不利于人民的事业的，就应当征求人民群众和同志们的意见，并且自己作检讨……不管是主动的，被动的，早作检讨，晚作检讨，只要正视错误，肯承认错误，肯改正错误，肯让群众批评，只要采取了这种态度，都应当欢迎。<br>
-－毛泽东<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup></p>
-</blockquote>
-<p>战“疫”必胜，天佑中华！✊</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>George Orwell, <em>1984</em> <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>F.Nietzsche, <em>《看哪这人》</em> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>伽列维, <em>《尼采的生平》</em> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn4" class="footnote-item"><p>Ray Monk, <em>Ludwig Wittgenstein: The Duty of Genius</em> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn5" class="footnote-item"><p>王小波, <em>《花剌子模信使问题》</em> <a href="#fnref5" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn6" class="footnote-item"><p>鲁迅, <em>《聪明人和傻子和奴才》</em> ,《野草集》 <a href="#fnref6" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn7" class="footnote-item"><p>雨果小说《悲惨世界》的同名改编音乐剧《悲惨世界》中的一首著名歌曲, 曲风激昂悲壮，被视为反极权统治的革命代表歌曲之一 <a href="#fnref7" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn8" class="footnote-item"><p>毛泽东,<em>《在扩大的中央工作会议上的讲话》</em>（一九六二年一月三十日） <a href="#fnref8" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
