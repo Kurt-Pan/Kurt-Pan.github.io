@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-04-23T13:41:13.232Z</updated>
+    <updated>2020-04-26T14:05:47.917Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第36期]]></title>
+        <id>https://Kurt-Pan.github.io/post/036/</id>
+        <link href="https://Kurt-Pan.github.io/post/036/">
+        </link>
+        <updated>2020-04-25T02:35:57.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzIzMjQyNzQ5MA==&amp;mid=2247502505&amp;idx=1&amp;sn=5af0b83e009c19d843a603dd0bac8ab5&amp;chksm=e8979024dfe01932737df219570a634850d746f8ae42c0e809f5b77622c38e3f6620fe0d8b40&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1587616734439&amp;sharer_shareid=7c6ea0f01edcbbbe10fd3a1cb96c9aa1&amp;exportkey=AVxpfrsmx587Ua28HRNBGmU%3D&amp;pass_ticket=tQhtQhfRQi83qI7uaRN%2FBc4s6BIE5h8tukA8SoXLUN1RtkCsh5PBGZ0mY4dJPhCr#rd">尤亦庄：量子纠缠，时空几何与机器学习 </a></p>
+</li>
+<li>
+<p><a href="https://constancecrozier.com/2020/04/16/forecasting-s-curves-is-hard/">Forecasting s-curves is hard</a></p>
+</li>
+<li>
+<p><a href="https://csunplugged.org/en/">Computer Science without a computer</a></p>
+</li>
+<li>
+<p><a href="https://jitsi.org/blog/e2ee/">This is what end-to-end encryption should look like!</a></p>
+</li>
+<li>
+<p><a href="https://tech.preferred.jp/en/blog/working-with-configuration-in-python/">Best Practices for Working with Configuration in Python Applications</a></p>
+</li>
+<li>
+<p><a href="https://masilotti.com/play-board-games-online/">How to play board games online with your friends</a></p>
+</li>
+<li>
+<p><a href="https://blog.xot.nl/2020/04/19/google-apple-contact-tracing-gact-a-wolf-in-sheeps-clothes/">Google Apple Contact Tracing (GACT): a wolf in sheep’s clothes.</a></p>
+</li>
+<li>
+<p><a href="https://theconvivialsociety.substack.com/p/a-theory-of-zoom-fatigue">A Theory of Zoom Fatigue</a></p>
+</li>
+<li>
+<p><a href="https://redandblack.io/blog/2020/bash-prompt-with-updating-time/">When did I run that command?</a></p>
+</li>
+<li>
+<p><a href="http://fuseki.net/home/WhatIsInterestingAboutFactorio.html">What Is Interesting About Factorio</a></p>
+</li>
+<li>
+<p>https://gfx-rs.github.io/2020/04/21/wgpu-web.html</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Watermarking PRFs]]></title>
         <id>https://Kurt-Pan.github.io/post/watermarking-prfs/</id>
@@ -1110,362 +1153,6 @@ decrypt(cipher_text_odd,key)
 </ul>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[实验一 Cracking Vigenère Cipher]]></title>
-        <id>https://Kurt-Pan.github.io/post/cracking-vigenere-cipher/</id>
-        <link href="https://Kurt-Pan.github.io/post/cracking-vigenere-cipher/">
-        </link>
-        <updated>2020-03-08T08:35:04.000Z</updated>
-        <summary type="html"><![CDATA[<p>2020 春《密码学基础》实验一</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>2020 春《密码学基础》实验一</p>
-<!-- more -->
-<hr>
-<h2 id="实验目的">实验目的</h2>
-<ol>
-<li>Understanding Vigenère Cipher</li>
-<li>Understanding Kasiski Test</li>
-<li>Understanding Friedman's Index of Coincidence Test</li>
-<li>Understanding Frequency Analysis to crack Caesar Cipher.</li>
-</ol>
-<h2 id="实验内容">实验内容</h2>
-<blockquote>
-<p>Note: the alphabet through the entire experiment is the uppercase English <code>A-Z</code>, no space, no punctuations.</p>
-</blockquote>
-<p>In this experiment, we will examine a well-known classical cipher, Vigenère Cipher.  Dating back to 16th century , Vigenère Cipher is a polyalphabetic substitution cipher.</p>
-<p>We will use some techniques and write computer program to cryptanalyze (to Crack!) the Vigenère Cipher.</p>
-<p>An overview of the process is as follows. Inputting ciphertext encrypted by Vigenère Cipher and using Kasiski examination + Friedman test to determine the keyword length. Then using the ciphertext separated by the length of the keyword as a group, and crack it by analyzing the Caesar cipher. Finally, outputting the keyword and the corresponding plaintext.</p>
-<h3 id="vigenère-cipher">Vigenère Cipher</h3>
-<p>Suppose we have an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>-character alphabet <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>=</mo><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">A = (a_1 , a_2 , ..., a_n )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>-character<br>
-key, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>K</mi><mo>=</mo><mo>(</mo><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>k</mi><mi>m</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">K = (k_1 , k_2 , ..., k_m )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> and a <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>-character plaintext, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mo>=</mo><mo>(</mo><msub><mi>m</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>m</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>m</mi><mi>t</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">M = (m_1 , m_2 , ..., m_t )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>.</p>
-<p>The alphabet  are encoded by integer number, i.g. the letters <code>A</code>–<code>Z</code> are taken to be the numbers <code>0</code>–<code>25</code> .</p>
-<p>Then, we define a <strong>Vigenère Cipher</strong> :</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>K</mi></msub><mo>(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>)</mo><mo>=</mo><msub><mi>m</mi><mi>i</mi></msub><mo>+</mo><msub><mi>k</mi><mi>i</mi></msub><mspace></mspace><mspace width="1em"/><mo>(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mspace width="0.3333333333333333em"/><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">E_K (a_i ) = m_i + k_i \pmod n
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></p>
-<p>and</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>D</mi><mi>K</mi></msub><mo>(</mo><msub><mi>c</mi><mi>i</mi></msub><mo>)</mo><mo>=</mo><msub><mi>c</mi><mi>i</mi></msub><mi mathvariant="normal">−</mi><msub><mi>k</mi><mi>i</mi></msub><mspace></mspace><mspace width="1em"/><mo>(</mo><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mspace width="0.3333333333333333em"/><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">D_K (c_i ) = c_i − k_i \pmod n
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">−</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:1em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></p>
-<figure data-type="image" tabindex="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vigen%C3%A8re_square_shading.svg/600px-Vigen%C3%A8re_square_shading.svg.png" alt="File:Vigenère square shading.svg" loading="lazy"></figure>
-<p>Above is the polyalphabetic substitution table of Vigenère Cipher,  called the Vigenère square or Vigenère table, also known as the tabula recta.</p>
-<p>With a random key equal to the size of the plaintext, Vigenère Cipher becomes<br>
-a <em>one-time pad</em> which is the only proven unbreakable cipher in the history. If the keyword has only one character, the Vigenère Cipher degenerates into a <em>Caesar Cipher</em>.</p>
-<p>The primary weakness of the Vigenère cipher is the repeating nature of its key. If a cryptanalyst correctly guesses the key's length, the cipher text can be treated as interwoven Caesar ciphers, which can easily be broken individually. The Kasiski examination and Friedman test can help to determine the key length.</p>
-<h3 id="kasiski-test">Kasiski Test</h3>
-<p><strong>Kasiski test</strong> is based on the observation that if two identical fragments of length three or more (trigraphs in this experiment) appears in the ciphertext, it is likely  that they correspond to the same plaintext fragment. The distance between the occurrences has to be a multiple of the period.</p>
-<p>Then we can find the common factors of the value of distance from previous occurrence, and use them as the key length candidates.</p>
-<blockquote>
-<p>Key:              ABCDABCDABCDABCDABCDABCDABCD<br>
-Plaintext:    <strong>CRYPTO</strong>ISSHORTFOR<strong>CRYPTO</strong>GRAPHY<br>
-Ciphertext: <strong>CSASTP</strong>KVSIQUTGQU<strong>CSASTP</strong>IUAQJB</p>
-</blockquote>
-<h3 id="index-of-coincidenceic-重合指数-friedman-test">Index of Coincidence(IC, 重合指数) &amp; Friedman Test</h3>
-<p>Let <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mo>{</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>…</mo><msub><mi>x</mi><mi>n</mi></msub><mo>}</mo></mrow><annotation encoding="application/x-tex">x = \{x_1 x_2 \ldots  x_n \}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> be a string of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> alphabetic characters. The <strong>index of coincidence</strong> of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>I</mi><mi>C</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">IC(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>, is the probability that randomly chosen two elements<br>
-of string <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> are the same.</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="bold">I</mi><mi mathvariant="bold">C</mi></mrow><mo>=</mo><mfrac><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>c</mi></munderover><msub><mi>n</mi><mi>i</mi></msub><mo>(</mo><msub><mi>n</mi><mi>i</mi></msub><mo>−</mo><mn>1</mn><mo>)</mo></mstyle><mrow><mi>N</mi><mo>(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathbf{IC} = \frac{\displaystyle\sum_{i=1}^{c}n_i(n_i -1)}{N(N-1)}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">I</span><span class="mord mathbf">C</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:4.255066em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:3.3190660000000003em;"><span style="top:-2.9653970000000003em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span><span style="top:-3.881397em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-5.319066000000001em;"><span class="pstrut" style="height:3.6513970000000002em;"></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p>where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> is the length of the text and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the frequency (as integer) of the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> letters of the alphabet (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mo>=</mo><mn>26</mn></mrow><annotation encoding="application/x-tex">c = 26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">6</span></span></span></span> for monocase English). The sum of the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>n</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">n_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is necessarily <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span>.</p>
-<p>Coincidences in ciphertext can be caused by coincidences in the underlying plaintext, this technique is used to cryptanalyze the Vigenère cipher.</p>
-<p>The Friedman test (sometimes known as the kappa test) was invented during the 1920s by William F. Friedman, who used the index of coincidence, which measures the unevenness of the cipher letter frequencies to break the cipher.</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mo>≈</mo><mfrac><mrow><msub><mi>κ</mi><mi>p</mi></msub><mo>−</mo><msub><mi>κ</mi><mi>r</mi></msub></mrow><mrow><mi>I</mi><mi>C</mi><mo>−</mo><msub><mi>κ</mi><mi>r</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0.027</mn><mi>N</mi></mrow><mrow><mi>I</mi><mi>C</mi><mo>∗</mo><mo>(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>−</mo><mn>0.0385</mn><mi>N</mi><mo>+</mo><mn>0.0655</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">L \approx \frac{\kappa_p-\kappa_r}{IC-\kappa_r}= \frac{0.027N}{IC*(N-1)-0.0385N+0.0655}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.09633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.26033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.29633em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">3</span><span class="mord">8</span><span class="mord">5</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">6</span><span class="mord">5</span><span class="mord">5</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mord">.</span><span class="mord">0</span><span class="mord">2</span><span class="mord">7</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span></span></span></span> is the key length.</p>
-<p>The probability <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>κ</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\kappa _{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>  is for  any two randomly chosen source language letters are the same (around 0.0655 for monocase English)</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>κ</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">\kappa_r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">κ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the probability of a coincidence  for a uniform random selection from the alphabet  (1/26 = 0.0385 for English).</p>
-<p>This formula applies only to the ciphertext of English plaintext. For other languages, the constants may be different.</p>
-<h2 id="实验步骤与过程">实验步骤与过程</h2>
-<h3 id="1-computing-the-chance-for-the-false-positive-rate-of-kasiski-test">1. Computing the chance for the false positive rate of Kasiski test</h3>
-<blockquote>
-<p>Read the paper <strong>Kasiski’s Test: Couldn’t the Repetitions be by Accident?</strong> and answer the question below:</p>
-<p>(The purpose of solving this probability is to recognize the validity of the Kasiski test.)</p>
-</blockquote>
-<p>The likelihood of two same trigraphs (three-letter sequences) <strong>not</strong> being from the same plaintext fragment? n=26</p>
-<hr>
-<p>Then implementing the functions below in the program <code>crack_vigenere_scaffold.py</code> to finish the experiment:</p>
-<h3 id="2-implementing-vigenère-cipher">2. Implementing Vigenère Cipher</h3>
-<pre><code class="language-python">def vigenere_encrypt(plaintext, key, alphabet):
-    &quot;&quot;&quot;Returns ciphertext encrypted by vigenere cipher using key&quot;&quot;&quot;
-    
-def vigenere_decrypt(ciphertext, key, alphabet):
-    &quot;&quot;&quot;Returns plaintext decrypted by vigenere cipher using key&quot;&quot;&quot;
-
-</code></pre>
-<h3 id="3-determining-the-key-size">3. Determining the Key Size</h3>
-<pre><code class="language-python">def kasiski_test(ciphertext):
-    &quot;&quot;&quot;Finds gcd of most common distances between repeated trigraphs
-    Recommended strategy: loop through the ciphertext, keeping a list of trigraphs and a list of distances in this way:
-    1) When encountering a new trigraph add it to the trigraph list
-    2) When encountering a repeat add the distance from current index to first index of that trigraph to the list of distances&quot;&quot;&quot;
-
-</code></pre>
-<pre><code class="language-python">def index_of_coincidence(ciphertext, alpha):
-    &quot;&quot;&quot;Caculates index of coincidnece of ciphertext&quot;&quot;&quot;
-</code></pre>
-<h3 id="4-determining-the-keyword">4. Determining the Keyword</h3>
-<p>Once the length of the key is known, the ciphertext can be rewritten into that many columns, with each column corresponding to a single letter of the key. Each column consists of plaintext that has been encrypted by a single Caesar cipher. The Caesar key (shift) is just the letter of the Vigenère key that was used for that column. Using methods similar to those used to break the Caesar cipher, the letters in the ciphertext can be discovered.</p>
-<pre><code class="language-python">def find_likely_letters(coset, alpha, eng_freq):
-    &quot;&quot;&quot;Finds the most likely shifts for each coset and prints them
-    Recommended strategy: make a list of the frequencies of each letter in the coset, in order, A to Z.
-    Then, alternate using the find total difference method (on your frequencies list and the standard english frequencies list) and the rotate list method to fill out a new list of differences.  This makes a list of the total difference for each possible encryption letter, A to Z, in order.
-    Then, find the indices of the smallest values in the new list, and i2c them for the most likely letters.&quot;&quot;&quot;
-    
-</code></pre>
-<p>Hint: The shift which leads to total difference closest to the English frequency distribution is the most likely Caesar cipher key.</p>
-<h2 id="实验要求和评分">实验要求和评分</h2>
-<ul>
-<li>学号尾号是奇数的同学分析文本<code>odd</code>，学号尾号是偶数的同学分析文本<code>even</code></li>
-</ul>
-<pre><code class="language-python">odd = &quot;DWFOSZPFWGVVMVOBXTBMGIILECURUWKGZGNMUHUHMKDTNUWDRMGHPTQABVVKOTVOAMKHCGJWGUGMEWQGIOAGSCLVSLGIQKFDIEUQXUHWCSWVGGARMMVVFWAJKICMUROBLYVQYFBAGGGFUMFYCZXTEXNZMAPCZJTWENWLVHZNOATEHQBOABVGBVMTLWTNRSAYTCUGIMBPVMEFVMYSIXOMLUSABGBAGHZHTBUCGMQNWWGZKBNXEGHMYZVHPFMIFZLKPTRUZTPGIPUQHPGIEFVHVFMNMTRRCAFJJEGGQADMYKBIADQTNWVFUQMWHQBOAVCBVBUIOQWLZFLBCHQAHLBUDCGFAMJSKBTBHHAMQJIMKCVVOKKGOARTBKCBANDBBQBKBTBLNWUVUQGIHPRNQGKACZQZTEHQPBTMTOVFBKMKCVFJHXCBLPVBMKBOBGNMJSXBTABDWTVUGYQFAZBTEEOAHBTMTOVFBKMKCVFBVWVVMEFQLCPZBBLXTQWFUQGVVMYPALQTIOJTBVMBBNIDGBWASMOGFAVCTXROGZFVMUTWEOWGTSDRSABDZMFFZOKQMFXQMJHPRQWLUWJVMQMACNEFDXTGIYUPXPSMQGWKVFCFUAITSIQTUXTQPNOBLOIAGCMPCFGBGBAGWZPVAMQAMETPTUGTVOOMJSUSPZFQFMVONHTAIGJWGVVIAUPXAKWHMLHVVMEXQLGBMREIVGFBNJVIGFKROBTISWSGZTWRQFBKVGDBREILWBIIPQWCPTRUPXUSKBTBLCBLCBGFGBBHOKXTHIVOBBGGKNOJXCJWVEMWKBXRSAHPPGHTQGIDPLTQVCZKHSZXPQGOVBGQAMPIIGKGURYQLVGBBNIDGDILNMGVGWIFZTECUZVVBEOBVPVLEVIAOMEYWBUPCMCHZHTBXFDIEUG&quot;
-
-even = &quot;ZMJXCGLHBGIPSPMPSOUQEOQYIFRYWCYVBWBVQKICRMWUEDXYCVAMRRYMCSRFMBGRNTLGTXRVJQKENAIFQZIIIJTATEHMUMVYZCZWPVHGLQUAOQDMVTBWBQAFJOXKVNQQTENVWACXBZRITVROUWLKJMBVRFWJXQYPWTKOIEFXKFLSBFKTTXVVFLVZKVMGQREEXQPPSEHBYIAVIBOHCJIFBVGHFPTSOFMFPLICERITWPDBZSPLIGEHUFXGVIGUGQJTGGASEVIEHEHUDHWMIXGKUWADTJMPMCFAVCTLCIXZVFIKMQGAQEHIKICGMSQIWIRGPBMCHAFJEKGDGROIERAQQFBAKIOLEVVFPDMPBUWMHBYIPXKSFVQKCQYASPXZVOGRLWFWZZFWMQCAFPRRPXTGNQLJYRITMGKMVUWBDOYHVKSHTEFVWBVRUBOBNWCIICMBVRVIDIVBUSGKMFVGMQQNOLVZGEWDZHVKWKGQBSRZDEVBWBGKMFVATVRPRUGYVXZGPLMEGGLPCJSZFQKLMCSSZFZKWQBTSZFZCUTMFHKLVGVZMCWWJCUMMAFFPRRIBVUGKQJEPVQSAWIIXKGBCNVKZIPVMHUHLVZGEWDZHVKSHVWACXBVVEHVHERTCIFVWAZXVZGCMQCAQMKAQKSGCUWEWGLMTSRZKPGLAOAGQEIZIMBFLDVGQGBOPWJVXYXMBCHWGPGHZQBPXLXGKACARXGSUBBSFLLVWQYBVRZWIPFKMDYDKZRIFWGGPIZPCGLANQGVBENZGVRVJAKMPHROMTSOFCBVFIKMQGATBUURRATXDYLKRXKHVGGKMJIEHVHNFBJQWLBPRPIUIUXKIEHIXEKGAHORBYICOMGQUWGTKGOOAGBYIKGRSPWQFRQYQZYHOZXKFIHRPMJWCZMGNWXIIUXVHU&quot;
-</code></pre>
-<blockquote>
-<p>Hint: 明文分别是两篇著名的密码学论文的第一段哦～</p>
-</blockquote>
-<ul>
-<li>由于密文文本长度限制，Fieldman Test 可能不准，以Kasiski Test 为主。</li>
-<li>编程语言、编译运行等实验环境<em>原则上不限</em>，<strong>建议</strong>在给出的Python框架基础上补完。
-<ul>
-<li>如使用其他编程语言、编译运行等实验环境，需要完成同等任务，并在实验报告中写明。</li>
-</ul>
-</li>
-<li>评分内容如下：（100分是本实验的总分，本学期五个实验各100分，学期末会加权得出实验分总分并汇入总成绩）</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>内容</th>
-<th>总分100</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Probability Computation</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Implementing Vigenère Cipher</td>
-<td>20</td>
-</tr>
-<tr>
-<td>Determining the Key Size(Kasiski Test + Friedman Test)</td>
-<td>20+10</td>
-</tr>
-<tr>
-<td>Determining the Keyword</td>
-<td>30</td>
-</tr>
-<tr>
-<td>Document(实验报告)</td>
-<td>15</td>
-</tr>
-</tbody>
-</table>
-<h2 id="实验提交">实验提交</h2>
-<ul>
-<li>分组规则:不分组,即独立完成project</li>
-<li>完成提交截止时间: <strong>3月29日23:00前</strong></li>
-<li>提交内容清单:需要提交
-<ul>
-<li>实验报告 （按照<strong>实验报告模板</strong>书写，要求提交<code>pdf</code>格式文件）（命名格式：<code>姓名+学号+实验一.pdf</code>）</li>
-<li>项目源代码 (命名格式：<code>学号_crack_vigenere.py</code>)</li>
-</ul>
-</li>
-<li>提交方式:<br>
-所有提交清单中的文件,压缩后, elearning提交</li>
-<li>鼓励录制短视频，介绍代码结构、演示运行结果、分析计算量等。</li>
-</ul>
-<hr>
-<h2 id="参考资料">参考资料</h2>
-<ul>
-<li>Wikipedia
-<ul>
-<li><a href="%5Bhttps://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher%5D(https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)">Vigenère cipher</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Kasiski_examination">Kasiski examination</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Index_of_coincidence">Index of coincidence</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="crack_vigenere_scaffoldpy">crack_vigenere_scaffold.py</h2>
-<pre><code class="language-python">from math import gcd
-from collections import Counter
-
-# Some helper functions provided:
-def c2i(c, alphabet):
-    &quot;&quot;&quot;Returns the index of c in the string alphabet, starting at 0&quot;&quot;&quot;
-    return alphabet.index(c)
-
-def i2c(i, alphabet):
-    &quot;&quot;&quot;Returns the character at index i in alphabet&quot;&quot;&quot;
-    return alphabet[i]
-
-def prepare_string(s, alphabet):
-    &quot;&quot;&quot;removes characters from s not in alphabet, returns new string&quot;&quot;&quot;
-    s = s.upper()
-    finalString = &quot;&quot;
-    for i in s:
-      if i in alphabet:
-        finalString += i
-    return finalString
-
-def make_cosets(text, n):
-    &quot;&quot;&quot;Makes cosets out of a ciphertext given a key length; should return an array of strings&quot;&quot;&quot;
-
-    cosets = []
-  
-    for index in range(n):
-      i = 0
-      nextword = &quot;&quot;
-      while (i + index) &lt;= (len(text) - 1):
-        nextword += text[i + index]
-        i += n
-      
-      cosets.append(nextword)
-    
-    return cosets
-
-def rotate_list(old_list):  
-    &quot;&quot;&quot;Takes the given list, removes the first element, and appends it to the end of the list, then returns the
-    new list&quot;&quot;&quot;
-    new_list = old_list[:]
-    new_list.append(old_list[0])
-    del new_list[0]
-    return new_list
-
-def find_total_difference(list1, list2):
-    &quot;&quot;&quot;Takes two lists of equal length containing numbers, finds the difference between each pair of matching
-    numbers, sums those differences, and returns that sum&quot;&quot;&quot;
-    
-    finalSum = 0
-    i = 0
-    while i &lt; len(list1):
-      finalSum += abs(list2[i] - list1[i])
-      i += 1
-    
-    return finalSum  
-
-
-
-
-def vigenere_encrypt(plaintext, key, alphabet):
-    &quot;&quot;&quot;Returns ciphertext encrypted by vigenere cipher using key&quot;&quot;&quot;
-    # WRITE YOUR CODE HERE!
-
-
-
-
-
-def vigenere_decrypt(ciphertext, key, alphabet):
-    &quot;&quot;&quot;Returns plaintext decrypted by vigenere cipher using key&quot;&quot;&quot;
-    # WRITE YOUR CODE HERE!
-
-
-
-
-
-def kasiski_test(ciphertext):  #Code partially provided
-    &quot;&quot;&quot;Finds gcd of most common distances between repeated trigraphs
-    Recommended strategy: loop through the ciphertext, keeping a list of trigraphs and a list of distances in this way:
-    1) When encountering a new trigraph add it to the trigraph list
-    2) When encountering a repeat add the distance from current index to first index of that trigraph to the list of distances&quot;&quot;&quot;
-
-    trigraphs = []
-    distances = []
-    
-    # WRITE YOUR CODE HERE!
-
-        
-    # Code is provided to find the gcd of any common distances appearing at least twice
-    dCount = Counter(distances)
-    topCount = dCount.most_common(6)
-    my_gcd = topCount[0][0]
-    for index in range(1, len(topCount)):
-        if topCount[index][1] &gt; 1:
-            my_gcd = gcd(my_gcd, topCount[index][0])
-    return my_gcd 
-
-
-
-def index_of_coincidence(ciphertext, alpha):
-    &quot;&quot;&quot;Caculates index of coincidnece of ciphertext&quot;&quot;&quot;
-    common = Counter(ciphertext)
-    ioc = 0
-    # WRITE YOUR CODE HERE!
-
-
-    return ioc
-
-def friedman_test(ciphertext, alpha):
-    l = 0
-    
-    n = len(ciphertext)
-    i = index_of_coincidence(ciphertext, alpha)
-    l = n * (0.027)/((n-1)*i + 0.0655 - 0.0385 * n)
-    
-    return l
-
-
-
-def run_key_tests(ciphertext, alphabet): 
-    &quot;&quot;&quot;Runs Kasiski and Friedman tests and outputs results&quot;&quot;&quot;
-    kasiski = kasiski_test(ciphertext)
-    friedman = friedman_test(ciphertext, alphabet)
-    
-    out =  &quot;Kasiski test gives this as the most likely: &quot; + str(kasiski) +  &quot;\n Friedman test gives: &quot; + str(friedman)
-    return out
-
-    
-def find_likely_letters(coset, alpha, eng_freq):
-    &quot;&quot;&quot;Finds the most likely shifts for each coset and prints them
-    Recommended strategy: make a list of the frequencies of each letter in the coset, in order, A to Z.
-    Then, alternate using the find total difference method (on your frequencies list and the standard english
-    frequencies list) and the rotate list method to fill out a new list of differences.  This makes a list of
-    the total difference for each possible encryption letter, A to Z, in order.
-    Then, find the indices of the smallest values in the new list, and i2c them for the most likely letters.&quot;&quot;&quot;
-    
-    coset_freq = []
-    differences = []
-    # WRITE YOUR CODE HERE!
-
-    
-    firstletter = 0
-    secondletter = 1
-    # WRITE YOUR CODE HERE!
-    
-    
-    letter1 = alpha[firstletter]
-    letter2 = alpha[secondletter]
-    return &quot;the most likely letter is: &quot; + letter1 + &quot; followed by: &quot; + letter2
-
-
-def crack(ciphertext, alpha, eng_freq): 
-    &quot;&quot;&quot;Main crack function&quot;&quot;&quot;
-    print(&quot;Your cipher text is: &quot; + ciphertext)
-    out = run_key_tests(ciphertext, alpha)
-    print(out)
-    x = int(input(&quot;Choose the key length you'd like to try: &quot;))
-    cosets = make_cosets(ciphertext, x)
-    for index in range(len(cosets)):
-        print(&quot;For coset &quot; + str(index + 1) + &quot;, &quot; + find_likely_letters(cosets[index], alpha, eng_freq) + &quot;.&quot;)
-    s = input(&quot;Type the key you would like to use to decipher: &quot;)
-    print(vigenere_decrypt(ciphertext, s, alpha))
-    print()
-
-
-
-
-alpha = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;
-
-eng_freq = [.0817, .0149, .0278, .0425, .1270, .0223, .0202, .0609, .0697, .0015, .0077, .0403, .0241, .0675, .0751,
-            .0193, .0010, .0599, .0633, .0906, .0276, .0098, .0236, .0015, .0197, .0007]
-
-
-odd = &quot;DWFOSZPFWGVVMVOBXTBMGIILECURUWKGZGNMUHUHMKDTNUWDRMGHPTQABVVKOTVOAMKHCGJWGUGMEWQGIOAGSCLVSLGIQKFDIEUQXUHWCSWVGGARMMVVFWAJKICMUROBLYVQYFBAGGGFUMFYCZXTEXNZMAPCZJTWENWLVHZNOATEHQBOABVGBVMTLWTNRSAYTCUGIMBPVMEFVMYSIXOMLUSABGBAGHZHTBUCGMQNWWGZKBNXEGHMYZVHPFMIFZLKPTRUZTPGIPUQHPGIEFVHVFMNMTRRCAFJJEGGQADMYKBIADQTNWVFUQMWHQBOAVCBVBUIOQWLZFLBCHQAHLBUDCGFAMJSKBTBHHAMQJIMKCVVOKKGOARTBKCBANDBBQBKBTBLNWUVUQGIHPRNQGKACZQZTEHQPBTMTOVFBKMKCVFJHXCBLPVBMKBOBGNMJSXBTABDWTVUGYQFAZBTEEOAHBTMTOVFBKMKCVFBVWVVMEFQLCPZBBLXTQWFUQGVVMYPALQTIOJTBVMBBNIDGBWASMOGFAVCTXROGZFVMUTWEOWGTSDRSABDZMFFZOKQMFXQMJHPRQWLUWJVMQMACNEFDXTGIYUPXPSMQGWKVFCFUAITSIQTUXTQPNOBLOIAGCMPCFGBGBAGWZPVAMQAMETPTUGTVOOMJSUSPZFQFMVONHTAIGJWGVVIAUPXAKWHMLHVVMEXQLGBMREIVGFBNJVIGFKROBTISWSGZTWRQFBKVGDBREILWBIIPQWCPTRUPXUSKBTBLCBLCBGFGBBHOKXTHIVOBBGGKNOJXCJWVEMWKBXRSAHPPGHTQGIDPLTQVCZKHSZXPQGOVBGQAMPIIGKGURYQLVGBBNIDGDILNMGVGWIFZTECUZVVBEOBVPVLEVIAOMEYWBUPCMCHZHTBXFDIEUG&quot;
-#even = &quot;ZMJXCGLHBGIPSPMPSOUQEOQYIFRYWCYVBWBVQKICRMWUEDXYCVAMRRYMCSRFMBGRNTLGTXRVJQKENAIFQZIIIJTATEHMUMVYZCZWPVHGLQUAOQDMVTBWBQAFJOXKVNQQTENVWACXBZRITVROUWLKJMBVRFWJXQYPWTKOIEFXKFLSBFKTTXVVFLVZKVMGQREEXQPPSEHBYIAVIBOHCJIFBVGHFPTSOFMFPLICERITWPDBZSPLIGEHUFXGVIGUGQJTGGASEVIEHEHUDHWMIXGKUWADTJMPMCFAVCTLCIXZVFIKMQGAQEHIKICGMSQIWIRGPBMCHAFJEKGDGROIERAQQFBAKIOLEVVFPDMPBUWMHBYIPXKSFVQKCQYASPXZVOGRLWFWZZFWMQCAFPRRPXTGNQLJYRITMGKMVUWBDOYHVKSHTEFVWBVRUBOBNWCIICMBVRVIDIVBUSGKMFVGMQQNOLVZGEWDZHVKWKGQBSRZDEVBWBGKMFVATVRPRUGYVXZGPLMEGGLPCJSZFQKLMCSSZFZKWQBTSZFZCUTMFHKLVGVZMCWWJCUMMAFFPRRIBVUGKQJEPVQSAWIIXKGBCNVKZIPVMHUHLVZGEWDZHVKSHVWACXBVVEHVHERTCIFVWAZXVZGCMQCAQMKAQKSGCUWEWGLMTSRZKPGLAOAGQEIZIMBFLDVGQGBOPWJVXYXMBCHWGPGHZQBPXLXGKACARXGSUBBSFLLVWQYBVRZWIPFKMDYDKZRIFWGGPIZPCGLANQGVBENZGVRVJAKMPHROMTSOFCBVFIKMQGATBUURRATXDYLKRXKHVGGKMJIEHVHNFBJQWLBPRPIUIUXKIEHIXEKGAHORBYICOMGQUWGTKGOOAGBYIKGRSPWQFRQYQZYHOZXKFIHRPMJWCZMGNWXIIUXVHU&quot;
-crack(odd, alpha, eng_freq)
-#crack(even, alpha, eng_freq)
-</code></pre>
 ]]></content>
     </entry>
 </feed>
