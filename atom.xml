@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-04-27T14:02:13.716Z</updated>
+    <updated>2020-04-28T09:57:48.862Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -57,6 +57,12 @@
 <p><a href="https://www.handsonscala.com/">Hands-on Scala Programming</a></p>
 </li>
 <li>
+<p><a href="https://davidthorpe.dev/kick-the-shit-out-of-procrastination/">Kick The Shit Out Of Procrastination</a></p>
+</li>
+<li>
+<p><a href="https://jason-williams.co.uk/a-possible-new-backend-for-rust">A Possible New Backend for Rust</a></p>
+</li>
+<li>
 <p>https://plantnet.org/en/</p>
 </li>
 <li>
@@ -64,6 +70,9 @@
 </li>
 <li>
 <p>https://gfx-rs.github.io/2020/04/21/wgpu-web.html</p>
+</li>
+<li>
+<p>https://www.getintention.com/</p>
 </li>
 </ul>
 ]]></content>
