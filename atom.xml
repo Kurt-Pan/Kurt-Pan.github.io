@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Kurt-Pan.github.io</id>
     <title>Kurt Pan</title>
-    <updated>2020-05-10T12:21:05.795Z</updated>
+    <updated>2020-05-17T07:32:29.728Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Kurt-Pan.github.io"/>
     <link rel="self" href="https://Kurt-Pan.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://Kurt-Pan.github.io/images/avatar.png</logo>
     <icon>https://Kurt-Pan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kurt Pan</rights>
+    <entry>
+        <title type="html"><![CDATA[每周分享第38期]]></title>
+        <id>https://Kurt-Pan.github.io/post/038/</id>
+        <link href="https://Kurt-Pan.github.io/post/038/">
+        </link>
+        <updated>2020-05-16T08:33:56.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><a href="http://www.timcasasola.com/blog/writing">Why does writing matter in remote work?</a></li>
+<li><a href="https://keychest.net/stories/understanding-pki-for-busy-folks">Understanding PKI for busy folks</a></li>
+<li><a href="https://robertovitillo.com/what-every-developer-should-know-about-tcp/">What every developer should know about TCP</a></li>
+<li><a href="https://ruslanspivak.com/eofnotchar/">EOF is not a character</a></li>
+<li><a href="https://hampton.pw/posts/shrinking-this-sites-docker-image/">Shrinking this sites docker image</a></li>
+<li><a href="https://refrf.shreyasminocha.me/">Regular Expressions for Regular Folk</a></li>
+<li><a href="https://fullstackopen.com/zh/">深入浅出现代Web编程</a></li>
+<li><a href="https://caicaishmily.gitbooks.io/pragmatic_programmer/">《Pragmatic Programmer》中文翻译</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI1NjUyOTUxNA==&amp;mid=2247485908&amp;idx=1&amp;sn=7df39bcde2ed47216fb65a8e04062fe3&amp;chksm=ea240cd1dd5385c755b383862fc7ca236c250f641ad39c2310633ed445b46d86e50e64ba23a4&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1589254473444&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=AWwTPgyxnQ7udozLhcKFSso%3D&amp;pass_ticket=y6YrQ0Cke10EGiw0kGSe4g%2FgGqXrRBzdJzxgmG6WmKUhXLdRLZTPxLzE4Vg5B9RM#rd">那个世界崩塌的盛夏 </a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTgyNjE4MQ==&amp;mid=2652484225&amp;idx=1&amp;sn=6edae7063d85bfe56672b37aded3332e&amp;chksm=84408eebb33707fd02dfd8cd14dd9dbe449a419ed2d4ba23324b4f2cda70e72bed217eef0401&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1589254152465&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=AWGQk3l3EtIX4GY1ypU4L30%3D&amp;pass_ticket=y6YrQ0Cke10EGiw0kGSe4g%2FgGqXrRBzdJzxgmG6WmKUhXLdRLZTPxLzE4Vg5B9RM#rd">写给DL041902班的同学们：返校前我们谈几个数学问题 </a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzIwNzM4MDAyNw==&amp;mid=2247483992&amp;idx=1&amp;sn=60e8b0653f955421a3917a0b3d17e6f1&amp;chksm=9712090ca065801a2d86a4dccaeaaf3f07a28391765c3f8753578d966fe2c2f43c8b8b192633&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1589430483469&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=Aca%2FBXXeh9dcN5XbEYlOUSg%3D&amp;pass_ticket=OZtRnv1%2F3Ux9HuFYWzZ5PSzGvZr2nrVxg5LE7fCoyuwI9kK9PWAHIba5sfiLdB57#rd">为什么区块链行业即将迎来一场新文化思潮？ </a></li>
+<li><a href="https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/index.htm">A 2020 Vision of Linear Algebra</a></li>
+<li>https://webwormhole.io/</li>
+<li>https://tara.ai/</li>
+<li>https://insomnia.rest/</li>
+<li>https://rss.pipedream.com/</li>
+<li>https://sitesauce.app/</li>
+<li>https://coderlane.net/</li>
+<li>https://grep.app/ : Search across a half million git repos</li>
+</ul>
+<h2 id="端对端加密的通信软件">端对端加密的通信软件</h2>
+<p>端对端加密（End-to-end encryption，缩写为 E2EE）指的是，只有对话双方能够看到通信内容，其他第三方都无法解密，属于最安全的通信方式。</p>
+<p>目前，支持端对端加密的通信软件，主要有下面这些。</p>
+<ul>
+<li><a href="https://signal.org/">Signal</a></li>
+<li><a href="https://www.whatsapp.com/">WhatsApp</a></li>
+<li><a href="https://wire.com/en/">Wire</a></li>
+<li><a href="https://about.riot.im/">Riot</a>（<a href="https://matrix.org/">Matrix</a> 协议的实现）</li>
+<li><a href="https://line.me/en/">Line</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IMessage#Security_and_privacy">iMessage</a></li>
+<li><a href="https://keybase.io/">Keybase</a></li>
+</ul>
+<p>Telegram 默认没有启用端对端加密，只有打开&quot;秘密对话&quot;功能才会启用。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[每周分享第37期]]></title>
         <id>https://Kurt-Pan.github.io/post/037/</id>
@@ -938,31 +980,6 @@ The Open Quantum Safe OpenSSH repository contains a fork of OpenSSH 7.7 that add
 </li>
 <li>
 <p>https://tailscale.com/</p>
-</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[每周分享第32期]]></title>
-        <id>https://Kurt-Pan.github.io/post/032/</id>
-        <link href="https://Kurt-Pan.github.io/post/032/">
-        </link>
-        <updated>2020-03-28T05:32:03.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTgyNjE4MQ==&amp;mid=2652484182&amp;idx=1&amp;sn=f0717efb16515a003a5502660f178ee0&amp;chksm=84408e3cb337072af28e11f00fe00982972bfedc9edfe7d91df02cdb701b0d04cd3ffb4403ed&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1585106719211&amp;sharer_shareid=adaf84fb0da863878feac0b9cbe8a41a&amp;exportkey=ASPOzlAPS2n5czIKSXgQlh0%3D&amp;pass_ticket=N8pDuZ8ohGnwbR9ESjr2judnqVdHKLvtDzZ1BUIc8QC1BkkoXGOx4hKbn0dGqJiz#rd">批判反思的舆论高地，我们不去占领，敌人就会占领 </a></p>
-</li>
-<li>
-<p><a href="https://sspai.com/post/59504">2020 年，如何才能拥有一个个人网站？ </a></p>
-</li>
-<li>
-<p><a href="http://www.ruanyifeng.com/blog/2020/03/the-world-after-coronavirus.html">尤瓦尔·赫拉利《冠状病毒之后的世界》</a></p>
-</li>
-<li>
-<p><a href="https://web.stanford.edu/class/cs253/">Stanford CS 253 Web Security Fall 2019</a></p>
-</li>
-<li>
-<p><a href="https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts">GitHub中文排行榜</a></p>
 </li>
 </ul>
 ]]></content>
